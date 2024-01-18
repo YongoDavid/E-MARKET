@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    overflow-x: hidden;
+}
+header{
+    margin: 10px;
+    width: 100%vw;
+    align-content: center;
+    /* display: inline-block; */
+}
+#LOGO h3{
+    position: absolute;
+    left: 28%;
+    top: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-icon{
+display: inline-block;
+position: absolute;
+right: 10px;
+bottom: 40.8em;
+min-width: 10px;
+min-height: 10px;
+}
+#dropdown_svg{
+    align-items: flex-start;
+    min-width: 50%;
+    min-height: 50%;
+}
+.Dropdown-container{
+z-index: 2;
+/* position: relative; */
+display:block;
+border-radius: 4px;
+/* background: rgba(0, 0, 0, 0.04); */
+max-height: 20%;
+/* backdrop-filter: blur(75px); */
+
+}
+.Dropdown-content{
+position: absolute;
+border-radius: 4px;
+background: #f8f7f7;
+width: 80%;
+padding: 10px;
+z-index: 3;
+display: none;
+
+/* Add transition property for smooth animation */
+transition: transform 0.3s ease-in-out;
+transform: translateX(-110%); /* Initial position outside the viewport */
+}
+.Dropdown-content a {
+    text-decoration: none;
+    color: black;
+}
+.Dropdown-content ul li {
+padding: 5px 10px;
+list-style-type: none;
+}
+.Dropdown-container:hover .Dropdown-content{
+  display: flex;
+}
+
+.Dropdown-container.clicked .Dropdown-content {
+    transform: translateX(0); /* Move to the center of the viewport when clicked */
+}
+
+#Search_bar{
+position: relative;
+bottom: 10px;
+background: rgba(0, 0, 0, 0.04);
+min-width: 18.6em;
+top: 2px;
+left: 1px;
+height: 1.8em;
+border-radius: 8px;
+}
+#Search_bar p{
+    position: absolute;
+    font-size: 10px;
+    left: 55px;
+    top: 8px;
+    color: rgb(183, 183, 183);
+}
+.Search_logo svg{
+    margin: 4px 4px ;
+}
+
+/* mobile screen  */
+@media (max-width: 576px){
+    body{
+        background-color: white;
+    }
+}
