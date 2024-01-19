@@ -305,8 +305,10 @@ opacity: 0.3;
 background: #000;
 }
 
-
-
+/* CATEGORIES SECTION  */
+.categories-section{
+    margin: 20px 15px 0px;
+}
 
 
 
