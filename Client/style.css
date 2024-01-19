@@ -5,30 +5,44 @@
 }
 
 body{
-    background-color: aqua;
     overflow-x: hidden;
+    background-color: aqua;
+    padding-top: 110px; 
 }
 header{
-    margin: 10px;
-    width: 100%vw;
     align-content: center;
-    /* display: inline-block; */
+    position: fixed;
+    margin-top: -10px;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    background-color: white; 
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+main{
+    margin-top: 40px; 
+     /* /* Adjust margin to leave space for the fixed header  */
+}
+#LOGO{
+    align-items: center;
+}
+
 #LOGO h3{
     position: absolute;
     left: 28%;
-    top: 3%;
+    top: 2em;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.cart-icon{
-display: inline-block;
-position: absolute;
-right: 10px;
-bottom: 40.8em;
-min-width: 10px;
-min-height: 10px;
+.cart-icon a{
+position: relative;
+top: 1.5em;
+left: 12em;
+text-decoration: none;
+list-style-type: none;
+color: black;
 }
 
 /* Login ans signup section  */
@@ -36,7 +50,6 @@ min-height: 10px;
     display: flex;
 }
 #log-section a {
-    
     padding: 5px;
     font-size: 14px;
     border: 1px solid  rgb(0, 0, 0);
@@ -92,9 +105,8 @@ list-style-type: none;
 position: relative;
 bottom: 10px;
 background: rgba(0, 0, 0, 0.04);
-min-width: 18.6em;
 top: 2px;
-left: 1px;
+left: 3px;
 height: 1.8em;
 border-radius: 8px;
 }
@@ -117,9 +129,15 @@ section {
 }
 .Hero-text1 h3{
 position: relative;
+bottom: 30px;
 left: 20px;
 bottom: 45px;
 color: white;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 125%
+letter-spacing: 1.90px; */
 }
 .Hero-text2{
 position: relative;
@@ -130,10 +148,19 @@ display: flex;
 color: white;
 gap: 5px;
 }
+.Hero-text2 h5{
+color: var(--Text, #FAFAFA);
+text-align: center;
+
+/* Title/16PX Medium */
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+}
 
 
 .sales1 , .sales2{
-    margin-bottom: 20px;
+    margin-bottom: -20px;
 }
 .sales3 {
     margin-top: 20px;
@@ -158,6 +185,7 @@ gap: 5px;
     position: absolute;
 }
 
+
 section{
     display: flex;
     margin: 15px 15px;
@@ -172,6 +200,9 @@ color: var(--Secondary-2, #DB4444);
 }
 .Todays-text svg {
 max-height: 20px;
+}
+.Todays-text p {
+font-size: 13px;
 }
 
 .Detials{
@@ -197,10 +228,6 @@ height: 120px;
 .sales2 .Item img{
     position: absolute;
     max-width: 100px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     top: 28px;
     left: 16.5px;
 }
@@ -218,18 +245,65 @@ height: 120px;
 }
 .item-text h4{
 position: relative;
-top: 130px;
+top: 120px;
+color: #000;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 .Item-price {
+color: var(--Secondary-2, #DB4444);
+/* Title/16PX Medium */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 display: flex;
 position: relative;
+font-size: 10px;
 gap: 10px;
-top: 50px;
+top: 15px;
+align-items: center;
+}
+.disprice p{
+    font-size: 10px;
+    color: #999898;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: line-through;
+}
+.Five-star1{
+    /* border: 2px solid black; */
+    gap: 5px;
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+.Five-star1 p{
+position: relative;
+top: 0.5px;
+color: #999898;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 21px; /* 150% */
 }
 
-
-
+.Line{
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+/* min-width:80px; */
+height: 1px;
+opacity: 0.3;
+background: #000;
+}
 
 
 
@@ -243,8 +317,28 @@ top: 50px;
 
 /* mobile screen  */
 @media (max-width: 576px){
+    *{
+        /* width: 100%vw; */
+    }
     body{
         background-color: white;
         overflow-x: hidden;
+    }
+    .Five-star1{
+        align-items: center;
+    }
+    .Five-star1 img{
+        max-width: 60px;
+        max-height: 10px;
+    }
+    .Five-star1 p{
+        font-size: 10px;
+        font-style: normal;
+    }
+    .Line{
+        max-width:150px;
+    }
+    #Search_bar{
+        max-width: 19.6em;
     }
 }
