@@ -309,7 +309,28 @@ background: #000;
 .categories-section{
     margin: 20px 15px 0px;
 }
+.categories-section h3{
+    color: var(--Text2, #000);
+    /* Heading/36PX SemiBold */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.30px;
+    margin: 10px 5px 0px;
+}
+.main-categories{
+display: flex;
+margin: 10px 10px 0px 10px;
+}
+.Box1{
+margin: 20px 20px 0px 15px;
+border-radius: 4px;
+border: 1px solid rgba(0, 0, 0, 0.30);
 
+width: 60px;
+height: 60px;
+}
 
 
 
