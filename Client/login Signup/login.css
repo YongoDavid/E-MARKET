@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: aqua;
+    padding-top: 110px; 
+}
+header{
+    align-content: center;
+    position: fixed;
+    margin-top: -10px;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    background-color: white; 
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+main{
+    margin-top: 40px; 
+     /* /* Adjust margin to leave space for the fixed header  */
+}
+#LOGO{
+    align-items: center;
+}
+
+#LOGO h3{
+    position: absolute;
+    left: 28%;
+    top: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cart-icon a{
+position: relative;
+top: 1.5em;
+left: 12em;
+text-decoration: none;
+list-style-type: none;
+color: black;
+}
+
+/* Login ans signup section  */
+#log-section{
+    display: flex;
+}
+#log-section a {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid  rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+#dropdown_svg{
+    align-items: flex-start;
+    min-width: 50%;
+    min-height: 50%;
+}
+.Dropdown-container{
+z-index: 2;
+/* position: relative; */
+display:block;
+border-radius: 4px;
+/* background: rgba(0, 0, 0, 0.04); */
+max-height: 20%;
+/* backdrop-filter: blur(75px); */
+
+}
+.Dropdown-content{
+position: absolute;
+border-radius: 4px;
+background: #f8f7f7;
+width: 80%;
+padding: 10px;
+z-index: 3;
+display: none;
+
+/* Add transition property for smooth animation */
+transition: transform 0.3s ease-in-out;
+transform: translateX(-110%); /* Initial position outside the viewport */
+}
+.Dropdown-content a {
+    text-decoration: none;
+    color: black;
+}
+.Dropdown-content ul li {
+font-size: 14px;
+padding: 5px 10px;
+list-style-type: none;
+}
+.Dropdown-container:hover .Dropdown-content{
+  display: flex;
+}
+
+.Dropdown-container.clicked .Dropdown-content {
+    transform: translateX(0); /* Move to the center of the viewport when clicked */
+}
+
+#Search_bar{
+position: relative;
+bottom: 10px;
+background: rgba(0, 0, 0, 0.04);
+top: 2px;
+left: 3px;
+height: 1.8em;
+border-radius: 8px;
+}
+#Search_bar p{
+    position: absolute;
+    font-size: 10px;
+    left: 55px;
+    top: 8px;
+    color: rgb(183, 183, 183);
+}
+.Search_logo svg{
+    margin: 4px 4px ;
+}
+
+/* LOGIN FORM AREA  */
+.AccountImage img{
+    max-width: 200px;
+    position: relative;
+    top: -30px;
+    left: 55px;
+}
+main h2{
+    position: relative;
+    bottom: 35px;
+    left: 68px;
+    font-size: 16px;
+}
+form{
+    margin-top: -100px;
+    display: grid;
+    place-items: center;
+}
+
+.form-Card{
+position: relative;
+top: 5em;
+padding: 10px;
+
+}
+.form-Card label{
+font-size: 10px;
+font-weight: 400;
+}
+.form-Card input{
+position: relative;
+height: 30px;
+width: 200px;
+border: none;
+border-bottom: 1px solid grey;
+font-size: 10px;
+font-weight: 400;
+}
+#Formbtn button{
+    position: relative;
+    color: white;
+    top: 20px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: var(--Button2, #DB4444);
+}
+#errorMessage{
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.Login-fter {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 576px){
+    *{
+        /* width: 100%vw; */
+    }
+    body{
+        background-color: white;
+        overflow-x: hidden;
+    }
+    
+}

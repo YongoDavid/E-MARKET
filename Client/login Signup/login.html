@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <header>
+            <div id="LOGO">
+                <h3>THE M@RKET</h3>
+    
+                <div class="cart-icon">
+                    <span class="material-symbols-outlined">
+                        <a href="#">shopping_cart</a>
+                        </span>
+                </div>
+            </div>
+            <div class="Dropdown-container">
+                <div id="dropdown_svg"><svg  xmlns="http://www.w3.org/2000/svg" width="35" height="40"
+                    viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+                        fill="#616161" />
+                    <path
+                        d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z"
+                        fill="#616161" />
+                    <path
+                        d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z"
+                        fill="#616161" />
+                </svg></div>
+                
+    
+                <div class="Dropdown-content">
+                    <ul>
+                        <div id="log-section">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Signup</a></li>
+                        </div>
+                        <li><a href="#">Men’s Fashion</a></li>
+                        <li><a href="#">Women’s Fashion</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Home & Lifestyle</a></li>
+                        <li><a href="#">Medicine</a></li>
+                        <li><a href="#">Sports & Outdoor</a></li>
+                        <li><a href="#">Baby’s & Toys</a></li>
+                        <li><a href="#">Groceries & Pets</a></li>
+                        <li><a href="#">Health & Beauty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Search_bar">
+                <p>Search for products , brands and categories...</p>
+        
+                <div class="Search_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z"
+                        fill="#B5B5B5" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+    </header>
+
+    <main>
+        <h2>Login to E-M@RKET </h2>
+        <div class="AccountImage">
+            <img src="./images/AccountImage.png" alt="">
+        </div>
+        <form action="" target="" class="form-Card">
+            <!-- <p>Enter Your details here</p> -->
+            <label for="email"></label> <br>
+            <input type="text" id="email" placeholder="Email or Phone number"> <br>
+
+
+            <label for="Password"></label> <br>
+            <input type="password" id="Password" placeholder="Password" required>
+
+            <div id="Formbtn">
+                <button type="submit">Login</button>
+            </div>
+
+            <p id="errorMessage"></p>
+            <div class="Login-fter">
+                <p>Don't have an acccount? <span><a href="./signup.html">Sign Up</a></span></p>
+            </div>
+        </form>
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const  dropdownContainer = document.querySelector('.Dropdown-container');
+    
+    dropdownContainer.addEventListener('click', function () {
+        // Toggle the 'clicked' class on the Dropdown-container
+        dropdownContainer.classList.toggle('clicked');
+    });
+});
+    </script>
+</body>
+</html>
