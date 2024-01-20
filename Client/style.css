@@ -356,14 +356,27 @@ height: 80px;
 /* FEATURED AREA  */
 .Featured{
     margin-left: 13px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .Featured h3{
     margin-top: -10px;
     position: relative;
     right: 13.5px;
 }
+.Featured-images{
+    margin-top: 15px;
+}
+.Flex-image{
+    display: flex;
+}
+.image2 img , .image3 img{
+position: relative;
+right: 5px;
+padding: 5px;
 
+}
+
+/* SERVICES SECTION  */
 
 /* mobile screen  */
 @media (max-width: 576px){
@@ -396,5 +409,11 @@ height: 80px;
     }
     .Advertisement img{
         max-width: 290px;
+    }
+    .image1 img{
+        max-width: 295px;
+    }
+    .image2 img , .image3 img{
+        max-width: 152px;
     }
 }
