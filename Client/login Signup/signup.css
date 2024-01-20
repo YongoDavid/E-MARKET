@@ -28,7 +28,9 @@ main{
     align-items: center;
 }
 
-#LOGO h3{
+#LOGO h3 a{
+    color: #000;
+    text-decoration: none;
     position: absolute;
     left: 28%;
     top: 2em;
@@ -168,7 +170,7 @@ form{
         padding: 10px;
         cursor: pointer;
         border: none;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 600;
         border-radius: 4px;
         background: var(--Button2, #DB4444);
@@ -185,6 +187,10 @@ form{
         text-align: center;
         font-size: 16px;
         margin-bottom: 30px;
+    }
+    .Login-fter span a {
+        color: #DB4444;
+        text-decoration: none;
     }
     
     

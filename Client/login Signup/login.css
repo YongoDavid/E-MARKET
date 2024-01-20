@@ -28,7 +28,9 @@ main{
     align-items: center;
 }
 
-#LOGO h3{
+#LOGO h3 a{
+    color: #000;
+    text-decoration: none;
     position: absolute;
     left: 28%;
     top: 2em;
@@ -140,6 +142,7 @@ form{
     place-items: center;
 }
 
+
 .form-Card{
 position: relative;
 top: 5em;
@@ -167,7 +170,7 @@ font-weight: 400;
     padding: 10px;
     cursor: pointer;
     border: none;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     border-radius: 4px;
     background: var(--Button2, #DB4444);
@@ -185,8 +188,10 @@ font-weight: 400;
     font-size: 16px;
     margin-bottom: 30px;
 }
-
-
+.Login-fter span a {
+    color: #DB4444;
+    text-decoration: none;
+}
 
 @media (max-width: 576px){
     *{

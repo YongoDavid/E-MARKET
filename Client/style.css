@@ -28,7 +28,9 @@ main{
     align-items: center;
 }
 
-#LOGO h3{
+#LOGO h3 a{
+    color: #000;
+    text-decoration: none;
     position: absolute;
     left: 28%;
     top: 2em;
