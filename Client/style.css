@@ -375,8 +375,28 @@ right: 5px;
 padding: 5px;
 
 }
-
 /* SERVICES SECTION  */
+.Services{
+    display: flex;
+}
+.Services img{
+    max-width: 35px;
+}
+.Services-text h5{
+color: #000;
+/* Title/20PX Semibold */
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+}
+
+/* FOOTER SECTION  */
+
+
+
+
 
 /* mobile screen  */
 @media (max-width: 576px){
