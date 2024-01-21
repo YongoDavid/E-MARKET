@@ -45,7 +45,7 @@ main{
 #LOGO{
     align-items: center;
 }
-
+/* MOBILE  */
 #LOGO h3 a{
     color: #000;
     text-decoration: none;
@@ -65,7 +65,7 @@ list-style-type: none;
 color: black;
 }
 
-/* Login ans signup section  */
+/* Login and signup section  */
 #log-section{
     display: flex;
 }
@@ -76,19 +76,19 @@ color: black;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
-#dropdown_svg{
+/* #dropdown_svg{
     align-items: flex-start;
     min-width: 50%;
     min-height: 50%;
-}
+} */
 .Dropdown-container{
-z-index: 2;
-/* position: relative; */
+/* z-index: 2; */
+position: relative;
 display:block;
-border-radius: 4px;
-/* background: rgba(0, 0, 0, 0.04); */
+/* border-radius: 4px;
+background: rgba(0, 0, 0, 0.04);
 max-height: 20%;
-/* backdrop-filter: blur(75px); */
+backdrop-filter: blur(75px); */
 
 }
 .Dropdown-content{
@@ -113,13 +113,13 @@ font-size: 14px;
 padding: 5px 10px;
 list-style-type: none;
 }
-.Dropdown-container:hover .Dropdown-content{
+/* .Dropdown-container:hover .Dropdown-content{
   display: flex;
 }
 
 .Dropdown-container.clicked .Dropdown-content {
-    transform: translateX(0); /* Move to the center of the viewport when clicked */
-}
+    transform: translateX(0); 
+} */
 
 #Search_bar{
 position: relative;
@@ -147,6 +147,24 @@ section {
     margin-top: 100px;
     margin-bottom: 30px;
 }
+/* CATEGORIES SECTION  */
+.categories-laptop{
+    margin-top: -50px;
+    /* display: flex; */
+    margin-left: 88px;
+    
+}
+.categories-laptop li a{
+    position: relative;
+    top: -50px;
+    color: #000;
+   text-decoration: none;
+}
+.categories-laptop li {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
 .Hero-text1 h3{
 position: relative;
 bottom: 30px;
@@ -189,21 +207,6 @@ font-weight: 500;
     margin-left: 28px;
     margin-top: 20px;
 }
-
-.Hero-section {
-    background: var(--Text2, #000);
-    
-    /* min-height: 150px */
-}
-.Hero-section img{
-    /* max-width: 100px; */
-    position: relative;
-    left: 58em;
-}
-.Hero-info{
-    position: absolute;
-}
-
 
 section{
     display: flex;
@@ -415,14 +418,14 @@ line-height: 28px; /* 140% */
 /* LAPTOP SCREEN  */
 
 @media (min-width: 992px){
-   .Dropdown-container{
+   #dropdown_svg{
     display: none;
    }
    #LOGO h3 a{
     color: #000;
     text-decoration: none;
     position: absolute;
-    left: 10%;
+    left: 6%;
     top: 1.5em;
     justify-content: center;
     align-items: center;
@@ -440,6 +443,16 @@ line-height: 28px; /* 140% */
     top: -5em;
     background: #000000;
     }
+    .Line3{
+        transform: rotate(90deg);
+        transform-origin: 0 0 ;
+        position: relative;
+        left: 300px;
+        height: 1.5px;
+        top: -19.5em;
+        width: 260px;
+        background: #c3c3c3;
+        }
    #Search_bar{
     position: relative;
     top: -8em;
@@ -449,12 +462,10 @@ line-height: 28px; /* 140% */
    #Laptop-Nav nav{
     display: flex;
    }
-   .Hero-section{
-    /* display: none; */
+   .categories-laptop{
+    position: relative;
    }
-   header{
-    /* display: none; */
-   }
+   
 }
 
 
@@ -525,4 +536,53 @@ line-height: 28px; /* 140% */
     .Hero-info{
         position: absolute;
     }
+
+    /* DROP DOWN AREA  */
+    .Dropdown-container{
+        z-index: 2;
+        position: relative;
+        display:block;
+        border-radius: 4px;
+        /* background: rgba(0, 0, 0, 0.04); */
+        max-height: 20%;
+        /* backdrop-filter: blur(75px); */
+        
+        }
+        .Dropdown-content{
+        position: absolute;
+        border-radius: 4px;
+        background: #f8f7f7;
+        width: 80%;
+        padding: 10px;
+        z-index: 3;
+        display: none;
+        
+        /* Add transition property for smooth animation */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-110%); /* Initial position outside the viewport */
+        }
+        .Dropdown-content a {
+            text-decoration: none;
+            color: black;
+        }
+        .Dropdown-content ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+        list-style-type: none;
+        }
+        .Dropdown-container:hover .Dropdown-content{
+          display: flex;
+        }
+        
+        .Dropdown-container.clicked .Dropdown-content {
+            transform: translateX(0); /* Move to the center of the viewport when clicked */
+        }
+        
+        .categories-laptop{
+            display: none;
+        }
+
+
+
+
 }
