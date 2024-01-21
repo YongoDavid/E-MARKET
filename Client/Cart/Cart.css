@@ -124,12 +124,109 @@ border-radius: 8px;
     margin: 4px 4px ;
 }
 
+
+/* Cart section  */
+.Payment-section{
+    margin: 10px 10px ;
+}
+.Bank{
+    gap: 50px;
+    margin-bottom: 10px;
+}
+#images img{
+    position: relative;
+    left: 12em;
+    height: 15px;
+    margin-bottom: -3px;
+}
+
+
+
 @media (max-width: 576px){
     *{
         /* width: 100%vw; */
     }
     body{
-        background-color: white;
+        background-color: rgb(237, 237, 237);
         overflow-x: hidden;
     }
+
+    .cart-section{
+    
+    }
+    .cart-section h4{
+        margin: 10px 10px ;
+        position: relative;
+        bottom: 1em;
+    }
+    .Total-section{
+        background-color: white;
+        padding: 10px;
+        height: 30px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 170px;
+    }
+    .cart-section p a{
+        border-radius: 4px;
+        background: #DB4444;
+        font-size: 10px;
+        margin: 10px 10px ;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid  #DB4444);
+    }
+    .cart-section p{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    
+    .Main-cart{
+        border-radius: 8px;
+        margin: 10px 10px ;
+        margin-top: 13px;
+        background-color: white;
+        height: 100px;
+    }
+    .items {
+        display: flex;
+        margin-left: 20px;
+    }
+    .item-desc{
+        margin-left: 30px;
+        display: flex;
+        gap: 80px;
+    }
+    .Remove button{
+        margin: 10px 20px ;
+        border: none;
+        border-radius: 4px;
+        background: #DB4444;
+        font-size: 10px;
+        margin: 10px 10px ;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid #DB4444);
+    }
+
+    .Order button{
+        width: 100px;
+        margin: 10px 20px ;
+        border: none;
+        border-radius: 4px;
+        background: #DB4444;
+        font-size: 10px;
+        margin: 10px 11px ;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid #DB4444);
+    }
+    
 }
