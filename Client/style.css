@@ -210,23 +210,12 @@ font-weight: 500;
     margin-left: 28px;
     margin-top: 20px;
 }
-.sales3 , .sales4 {
-    top: -21.1em;
-    left: 40em;
-    position: relative;
-}
 
 /* LAPTOP SCREEN  */
 section{
     display: flex;
     margin: 15px 15px;
     margin-top: 20px;
-}
-#SALES3-SALES4{
-    display: flex;
-    position: relative;
-    right: 40em;
-    top: -22.1em;
 }
 .Todays-text{
 display: flex;
@@ -280,7 +269,6 @@ height: 240px;
     top: 15px;
     left: 25px;
 }
-
 .item-text h4{
 margin-top: 30px;
 }
