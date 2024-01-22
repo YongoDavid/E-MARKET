@@ -377,11 +377,12 @@ height: 80px;
 }
 
 /* ADS SECTION  */
-.Advertisement{
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    left: 14px;
+.Advertisement img{
+    
+    /* position: relative; */
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    /* left: 14px; */
 }
 
 .Featured h3{
@@ -440,6 +441,7 @@ line-height: 28px; /* 140% */
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
     main{
+        justify-content: center;
         margin-top: 40px; 
          /* /* Adjust margin to leave space for the fixed header  */
     }
@@ -467,7 +469,15 @@ line-height: 28px; /* 140% */
         max-width: 40px;
     }
     .Advertisement img{
-        max-width: 290px;
+        height: auto;
+        max-width: 100%;
+    }
+    .Advertisement{
+        margin-left: auto;
+        margin-right: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
     }
     .image1 img{
         max-width: 295px;
@@ -476,8 +486,10 @@ line-height: 28px; /* 140% */
         max-width: 152px;
     }
     .Hero-section {
+        justify-content: center;
         background: var(--Text2, #000);
-        min-height: 150px
+        /* come back to this  */
+        /* min-height: 150px */
     }
     .Hero-section img{
         max-width: 100px;
@@ -549,6 +561,7 @@ line-height: 28px; /* 140% */
         }
         
         section{
+            justify-content: center;
             display: flex;
             margin: 15px 15px;
             margin-top: 20px;
@@ -665,6 +678,12 @@ line-height: 28px; /* 140% */
         height: 1px;
         opacity: 0.3;
         background: #000;
+        }
+        .main-categories{
+            justify-content: center;
+        }
+        .Advertisement img{
+            justify-content: center;
         }
         .Services{
             display: none;
