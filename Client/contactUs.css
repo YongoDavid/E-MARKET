@@ -39,9 +39,16 @@ main{
     text-align: center;
 }
 .cart-icon a{
-position: relative;
+/* position: relative;
 top: 1.5em;
 left: 12em;
+text-decoration: none;
+list-style-type: none;
+color: black; */
+
+position: absolute;
+left: 89%;
+top: 1.5em;
 text-decoration: none;
 list-style-type: none;
 color: black;
@@ -59,6 +66,12 @@ color: black;
     background-color: rgb(255, 255, 255);
 }
 #dropdown_svg{
+    /* align-items: flex-start;
+    min-width: 50%;
+    min-height: 50%; */
+
+    top: 0.5em;
+    position: relative;
     align-items: flex-start;
     min-width: 50%;
     min-height: 50%;

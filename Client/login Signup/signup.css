@@ -40,9 +40,17 @@ main{
     text-align: center;
 }
 .cart-icon a{
-position: relative;
+/* position: relative;
 top: 1.5em;
 left: 12em;
+text-decoration: none;
+list-style-type: none;
+color: black; */
+
+
+position: absolute;
+left: 89%;
+top: 1.5em;
 text-decoration: none;
 list-style-type: none;
 color: black;

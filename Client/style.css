@@ -10,7 +10,7 @@ body{
     padding-top: 110px; 
 }
 header{
-    /* align-content: center; */
+    align-content: center;
     /* position: fixed; */
     /* margin-top: -10px; */
     /* top: 0px; */
@@ -58,9 +58,10 @@ main{
     text-align: center;
 }
 .cart-icon a{
-position: relative;
+position: absolute;
+left: 89%;
 top: 1.5em;
-left: 12em;
+
 text-decoration: none;
 list-style-type: none;
 color: black;
@@ -77,11 +78,13 @@ color: black;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 }
-/* #dropdown_svg{
+#dropdown_svg{
+    top: 0.5em;
+    position: relative;
     align-items: flex-start;
     min-width: 50%;
     min-height: 50%;
-} */
+}
 .Dropdown-container{
 /* z-index: 2; */
 position: relative;
@@ -123,11 +126,13 @@ list-style-type: none;
 } */
 
 #Search_bar{
+
+justify-content: center;
 position: relative;
 bottom: 10px;
 background: rgba(0, 0, 0, 0.04);
 top: 2px;
-left: 3px;
+/* left: 3px; */
 height: 1.8em;
 border-radius: 8px;
 }
@@ -306,7 +311,6 @@ align-items: center;
     text-decoration-line: line-through;
 }
 .Five-star1{
-    /* border: 2px solid black; */
     gap: 5px;
     display: flex;
     position: relative;
@@ -327,7 +331,6 @@ line-height: 21px; /* 150% */
 margin-left: auto;
 margin-right: auto;
 margin-top: 30px;
-/* min-width:80px; */
 height: 1px;
 opacity: 0.3;
 background: #000;
@@ -378,7 +381,6 @@ height: 80px;
 
 /* ADS SECTION  */
 .Advertisement img{
-    
     /* position: relative; */
     /* margin-top: 30px;
     margin-bottom: 30px; */
@@ -461,9 +463,6 @@ line-height: 28px; /* 140% */
     }
     .Line{
         max-width:150px;
-    }
-    #Search_bar{
-        max-width: 19.6em;
     }
     .Box1 img{
         max-width: 40px;
@@ -739,9 +738,19 @@ line-height: 28px; /* 140% */
     right: 13.5px;
 }
 .Featured-images{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
     margin-top: 15px;
 }
 .Flex-image{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
     display: flex;
 }
 .image2 img , .image3 img{
