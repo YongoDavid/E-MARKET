@@ -38,9 +38,10 @@ nav{
     text-decoration: none;
     margin-right: 4px;
 }
+
 main{
-    margin-top: 40px; 
-     /* /* Adjust margin to leave space for the fixed header  */
+    position: relative;
+    margin-top: -21em; 
 }
 #LOGO{
     align-items: center;
@@ -161,10 +162,11 @@ section {
    text-decoration: none;
 }
 .categories-laptop li {
-    margin-top: 10px;
+    margin-top: 30px;
     list-style-type: none;
 }
 
+/* MOBILE SCREEN  */
 .Hero-text1 h3{
 position: relative;
 bottom: 30px;
@@ -196,6 +198,7 @@ font-style: normal;
 font-weight: 500;
 }
 
+/* LAPTOP SCREEN START HERE  */
 
 .sales1 , .sales2{
     margin-bottom: -20px;
@@ -207,11 +210,23 @@ font-weight: 500;
     margin-left: 28px;
     margin-top: 20px;
 }
+.sales3 , .sales4 {
+    top: -21.1em;
+    left: 40em;
+    position: relative;
+}
 
+/* LAPTOP SCREEN  */
 section{
     display: flex;
     margin: 15px 15px;
     margin-top: 20px;
+}
+#SALES3-SALES4{
+    display: flex;
+    position: relative;
+    right: 40em;
+    top: -22.1em;
 }
 .Todays-text{
 display: flex;
@@ -224,7 +239,7 @@ color: var(--Secondary-2, #DB4444);
 max-height: 20px;
 }
 .Todays-text p {
-font-size: 13px;
+font-size: 20px;
 }
 
 .Detials{
@@ -238,38 +253,42 @@ background: var(--Secondary-2, #DB4444);
 margin-top: 10px;
 border-radius: 4px;
 background: var(--Secondary, #F5F5F5);
-width: 130px;
-height: 120px;
+width: 250px;
+height: 240px;
 }
 .sales1 .Item img{
     position: absolute;
-    max-width: 80px;
+    /* max-width: 80px; */
     top: 18px;
     left: 16.5px;
 }
 .sales2 .Item img{
     position: absolute;
-    max-width: 100px;
+    /* max-width: 100px; */
     top: 28px;
     left: 16.5px;
 }
 .sales3 .Item img{
     position: absolute;
-    max-width: 80px;
+    /* max-width: 80px; */
     top: 30px;
     left: 23px;
 }
 .sales4 .Item img{
     position: absolute;
-    max-width: 60px;
+    /* max-width: 60px; */
     top: 15px;
     left: 25px;
 }
+
+.item-text h4{
+margin-top: 30px;
+}
 .item-text h4{
 position: relative;
-top: 120px;
+top: 12em;
 color: #000;
-font-size: 12px;
+font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
@@ -285,13 +304,12 @@ font-weight: 500;
 line-height: 24px; /* 150% */
 display: flex;
 position: relative;
-font-size: 10px;
 gap: 10px;
-top: 15px;
+top: 30px;
 align-items: center;
 }
 .disprice p{
-    font-size: 10px;
+    font-size: 15px;
     color: #999898;
     font-family: Poppins;
     font-style: normal;
@@ -304,7 +322,7 @@ align-items: center;
     gap: 5px;
     display: flex;
     position: relative;
-    top: 10px;
+    top: 30px;
 }
 .Five-star1 p{
 position: relative;
@@ -326,6 +344,8 @@ height: 1px;
 opacity: 0.3;
 background: #000;
 }
+/* STOP HERE FOR LAPTOP SCREEN   */
+
 
 /* CATEGORIES SECTION  */
 .categories-section{
@@ -418,6 +438,12 @@ line-height: 28px; /* 140% */
 /* LAPTOP SCREEN  */
 
 @media (min-width: 992px){
+    main{
+        position: relative;
+        margin-top: -21em; 
+        left: 6%;
+         /* /* Adjust margin to leave space for the fixed header  */
+    }
    #dropdown_svg{
     display: none;
    }
@@ -443,14 +469,15 @@ line-height: 28px; /* 140% */
     top: -5em;
     background: #000000;
     }
+    /* LAPTOP SCREEN  */
     .Line3{
         transform: rotate(90deg);
         transform-origin: 0 0 ;
         position: relative;
         left: 300px;
         height: 1.5px;
-        top: -19.5em;
-        width: 260px;
+        top: -31em;
+        width: 450px;
         background: #c3c3c3;
         }
    #Search_bar{
@@ -459,13 +486,60 @@ line-height: 28px; /* 140% */
     left: 58em;
     width: 250px;
    }
+   /* LAPTOP SCREEN  */
    #Laptop-Nav nav{
     display: flex;
    }
+   /* LAPTOP SCREEN  */
    .categories-laptop{
     position: relative;
    }
-   
+   .Hero-main{
+    background-color: #000;
+    position: relative;
+    top: -29em;
+    left: 20em;
+    width: 1001px;
+    height: 420px;
+   }
+   .Hero-text1{
+    position: relative;
+    top: -10em;
+   }
+   .Hero-text1 h3{
+    position: relative;
+    left: 3em;
+    color: var(--Text, #FAFAFA);
+    /* Heading/48PX SemiBold */
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 125% */
+    letter-spacing: 1.92px;
+   }
+   .Hero-text2{
+    position: relative;
+    top: -80px;
+   }
+   .Hero-text2 h5{
+    position: relative;
+    left: 5em;
+    color: var(--Text, #FAFAFA);
+    text-align: center;
+
+    /* Title/16PX Medium */
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+   }
+   .Hero-main img{
+    position: relative;
+    top: 4em;
+    left: 30em;
+   }
 }
 
 
@@ -489,6 +563,10 @@ line-height: 28px; /* 140% */
         background-color: white; 
         z-index: 1000;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    main{
+        margin-top: 40px; 
+         /* /* Adjust margin to leave space for the fixed header  */
     }
     #Laptop-Nav{
         display: none;
@@ -583,6 +661,135 @@ line-height: 28px; /* 140% */
         }
 
 
-
+        /* TODAYS SECTION  */
+        .sales1 , .sales2{
+            margin-bottom: -20px;
+        }
+        .sales3 {
+            margin-top: 20px;
+        }
+        .sales2 , .sales4{
+            margin-left: 28px;
+            margin-top: 20px;
+        }
+        
+        section{
+            display: flex;
+            margin: 15px 15px;
+            margin-top: 20px;
+        }
+        .Todays-text{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1em;
+        color: var(--Secondary-2, #DB4444);
+        }
+        .Todays-text svg {
+        max-height: 20px;
+        }
+        .Todays-text p {
+        font-size: 13px;
+        }
+        
+        .Detials{
+            position: relative;
+        }
+        .Discount{
+        border-radius: 4px;
+        background: var(--Secondary-2, #DB4444);
+        }
+        .Item{
+        margin-top: 10px;
+        border-radius: 4px;
+        background: var(--Secondary, #F5F5F5);
+        width: 130px;
+        height: 120px;
+        }
+        .sales1 .Item img{
+            position: absolute;
+            max-width: 80px;
+            top: 18px;
+            left: 16.5px;
+        }
+        .sales2 .Item img{
+            position: absolute;
+            max-width: 100px;
+            top: 28px;
+            left: 16.5px;
+        }
+        .sales3 .Item img{
+            position: absolute;
+            max-width: 80px;
+            top: 30px;
+            left: 23px;
+        }
+        .sales4 .Item img{
+            position: absolute;
+            max-width: 60px;
+            top: 15px;
+            left: 25px;
+        }
+        .item-text h4{
+        position: relative;
+        top: 120px;
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        }
+        
+        .Item-price {
+        color: var(--Secondary-2, #DB4444);
+        /* Title/16PX Medium */
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        display: flex;
+        position: relative;
+        font-size: 10px;
+        gap: 10px;
+        top: 15px;
+        align-items: center;
+        }
+        .disprice p{
+            font-size: 10px;
+            color: #999898;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            text-decoration-line: line-through;
+        }
+        .Five-star1{
+            /* border: 2px solid black; */
+            gap: 5px;
+            display: flex;
+            position: relative;
+            top: 10px;
+        }
+        .Five-star1 p{
+        position: relative;
+        top: 0.5px;
+        color: #999898;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px; /* 150% */
+        }
+        
+        .Line{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        /* min-width:80px; */
+        height: 1px;
+        opacity: 0.3;
+        background: #000;
+        }
 
 }
