@@ -208,9 +208,6 @@ max-height: 20px;
 font-size: 20px;
 }
 
-.Detials{
-    position: relative;
-}
 .Discount{
 border-radius: 4px;
 background: var(--Secondary-2, #DB4444);
@@ -326,7 +323,7 @@ background: #000;
 
 
 /* CATEGORIES SECTION  */
-.categories-section{
+/* .categories-section{
     margin: 20px 15px 0px;
 }
 .categories-section h3{
@@ -363,11 +360,8 @@ height: 80px;
     right: -1px;
     bottom: 19px;
     font-size: 12px;
-}
+} */
 
-/* ADS SECTION  */
-.Advertisement img{
-}
 
 .Featured h3{
     margin-top: -10px;
@@ -420,6 +414,15 @@ line-height: 28px; /* 140% */
         position: relative;
         top: 1em;
     }
+    .Line{
+        margin-bottom: 2em;
+        justify-content: center;
+        /* margin-top: 30px; */
+        width: 1100px;
+        height: 1px;
+        opacity: 0.3;
+        background: #000;
+        }
     .Line2{
         position: relative;
         top: -6em;
@@ -484,35 +487,103 @@ line-height: 28px; /* 140% */
                 color: white;
                 gap: 5px;
             }
+
+
+            /* CATEGORIES SECTION  */
+.categories-section{
+margin-top: 2em;
+margin-bottom: 2em;
+}
+.categories-section h3{
+    color: var(--Text2, #000);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 5px 0px;
+}
+.main-categories{
+display: flex;
+justify-content: center;
+/* margin: 10px 0px 0px 0px; */
+}
+.Box1{
+text-align: center;
+margin: 20px 30px 0px 5px;
+border-radius: 4px;
+border: 1px solid rgba(0, 0, 0, 0.30);
+padding: 20px; 
+width: 200px;
+height: 150px;
+}
+.Box1 img{
+    top: 1.5em;
+    position: relative;
+    right: -3px;
+    bottom: 15px;
+    max-width: 120px;
+    max-height: 120px;
+}
+.Box1 p{
+    position: relative;
+    top: 2.5em;
+    right: -1px;
+    bottom: 19px;
+    font-size: 15px;
+}
+
+
+
             section{
+                margin-right: 9em;
+                margin-bottom: -5em;
                 /* justify-content: center; */
                 position: relative;
                 display: flex;
             }
 
-            .sales2{
+            .sales1{
                 position: relative;
                 top: 1.5em;
+            }
+            .sales2{
+                position: relative;
+                top: 3em;
             }
             section >.sales3 , section >.sales4{
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -19.6em;
+                top: -13em;
             }
             .SALES3 , .SALES4{
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -19.6em;
+                top: -13em;
             }
             .sales7 , .sales8{
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -19.6em;
+                top: -14.6em;
             }
             
+            .Todays-text {
+                position: relative;
+                left: 6em;
+            }
+            .categories-section h3{
+                position: relative;
+                left: 7.5em;
+            }
+            .Detials{
+                margin-right: 4.3em;
+                position: relative;
+                left: 8em;
+            }
+
             /* SERVICES AND FOOTER AREA  */
             .Services {
                 margin-top: 1em;
@@ -533,6 +604,34 @@ line-height: 28px; /* 140% */
             .Services-text p{
                 font-size: 12px;
             }
+
+            /* ADS SECTION  */
+
+            .Advertisement{
+                margin-left: auto;
+                margin-right: auto;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+            .Advertisement img{
+               height: auto;
+               max-width: 100%;
+
+            }
+            .Featured{
+
+            }
+            .Featured-images {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+            .Flex-image img{
+                margin-left: 2em;
+               height: 298px;
+            }
+
 
             footer{
                 padding-top: 20px;
@@ -824,6 +923,50 @@ line-height: 28px; /* 140% */
         opacity: 0.3;
         background: #000;
         }
+
+        /* CATEGORIES SECTION  */
+.categories-section{
+    margin: 20px 15px 0px;
+}
+.categories-section h3{
+    color: var(--Text2, #000);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 10px 5px 0px;
+}
+.main-categories{
+display: flex;
+margin: 10px 0px 0px 0px;
+}
+.Box1{
+justify-content: center;
+margin: 20px 10px 0px 5px;
+border-radius: 4px;
+border: 1px solid rgba(0, 0, 0, 0.30);
+padding: 20px; 
+width: 90px;
+height: 80px;
+}
+.Box1 img{
+    position: relative;
+    right: -3px;
+    bottom: 15px;
+    max-width: 50px;
+    max-height: 60px;
+}
+.Box1 p{
+    margin-top: 5px;
+    position: relative;
+    right: -1px;
+    bottom: 19px;
+    font-size: 12px;
+}
+
+
+
         .main-categories{
             justify-content: center;
         }
