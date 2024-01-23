@@ -205,7 +205,7 @@ font-weight: 500;
 
 /* LAPTOP SCREEN START HERE  */
 
-.sales1 , .sales2{
+/* .sales1 , .sales2{
     margin-bottom: -20px;
 }
 .sales3 {
@@ -214,13 +214,13 @@ font-weight: 500;
 .sales2 , .sales4{
     margin-left: 28px;
     margin-top: 20px;
-}
+} */
 
 /* LAPTOP SCREEN  */
 section{
     display: flex;
     margin: 15px 15px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .Todays-text{
 display: flex;
@@ -406,13 +406,15 @@ height: 80px;
 color: #000;
 /* Title/20PX Semibold */
 font-family: Poppins;
-font-size: 10px;
+font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 28px; /* 140% */
 }
 
 /* FOOTER SECTION  */
+
+
 /* LAPTOP SCREEN  */
 @media (min-width: 992px){
     *{
@@ -507,7 +509,194 @@ line-height: 28px; /* 140% */
                 color: white;
                 gap: 5px;
             }
+        
+            .sales3 , .sales4{
+                position: relative;
+                top: -21.1em;
+                left: 40em;
+            }
 
+            .Adjust{
+                position: relative;
+                top: -22em;
+                right: 40em;
+            }
+
+            section{
+                /* display: flex; */
+                margin: 15px 15px;
+                margin-top: 0px;
+            }
+            .Todays-text{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1em;
+            color: var(--Secondary-2, #DB4444);
+            }
+            .Todays-text svg {
+            max-height: 20px;
+            }
+            .Todays-text p {
+            font-size: 20px;
+            }
+            
+            .Detials{
+                position: relative;
+                margin-left: 4.5em;
+            }
+            .Discount{
+            border-radius: 4px;
+            background: var(--Secondary-2, #DB4444);
+            }
+            .Item{
+            margin-top: 10px;
+            border-radius: 4px;
+            background: var(--Secondary, #F5F5F5);
+            width: 250px;
+            height: 240px;
+            }
+            .sales1 .Item img{
+                position: absolute;
+                /* max-width: 80px; */
+                top: 18px;
+                left: 16.5px;
+            }
+            .sales2 .Item img{
+                position: absolute;
+                /* max-width: 100px; */
+                top: 28px;
+                left: 16.5px;
+            }
+            .sales3 .Item img{
+                position: absolute;
+                /* max-width: 80px; */
+                top: 30px;
+                left: 23px;
+            }
+            .sales4 .Item img{
+                position: absolute;
+                /* max-width: 60px; */
+                top: 15px;
+                left: 25px;
+            }
+            .item-text h4{
+            margin-top: 30px;
+            }
+            .item-text h4{
+            position: relative;
+            top: 12em;
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            }
+            
+            .Item-price {
+            color: var(--Secondary-2, #DB4444);
+            /* Title/16PX Medium */
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            display: flex;
+            position: relative;
+            gap: 10px;
+            top: 30px;
+            align-items: center;
+            }
+            .disprice p{
+                font-size: 15px;
+                color: #999898;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                text-decoration-line: line-through;
+            }
+            .Five-star1{
+                gap: 5px;
+                display: flex;
+                position: relative;
+                top: 30px;
+            }
+            .Five-star1 p{
+            position: relative;
+            top: 0.5px;
+            color: #999898;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 21px; /* 150% */
+            }
+            
+            .Line{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            height: 1px;
+            opacity: 0.3;
+            background: #000;
+            }
+
+            /* SERVICES AND FOOTER AREA  */
+            .Services {
+                margin-top: 1em;
+                margin-bottom: 1em;
+                justify-content: center ;
+            }
+            .service1 , .service2 , .service3{
+                margin-right: 2em;
+            }
+            .service1 img , .service2 img  , .service3 img{
+                position: relative;
+                left: 6em;
+            }
+            .Services-text{
+                text-align: center;
+                justify-content: center;
+            }
+            .Services-text p{
+                font-size: 12px;
+            }
+
+            footer{
+                height: 220px;
+                padding-top: 20px;
+                justify-content: center;
+                display: flex;
+                background-color: #000;
+                color: white;
+            }
+            .Footer1 , .Footer2{
+                display: flex;
+            }
+            .Copyright{
+                position: absolute;
+                margin-top: 10em;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: rgb(135, 135, 135);
+                background-color: #000;
+                text-align: center;
+                /* margin-bottom: 20px; */
+            }
+            .Part1 , .Part2{
+                margin-bottom: 6px;
+                margin-left: 5em;
+            }
+            .Part1 h4, .Part2 h4{
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+            .Part1 p, .Part2 p{
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
 }
     
 
