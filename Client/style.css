@@ -6,19 +6,12 @@
 
 body{
     overflow-x: hidden;
-    /* background-color: aqua; */
     padding-top: 110px; 
 }
 header{
     align-content: center;
-    /* position: fixed; */
-    /* margin-top: -10px; */
-    /* top: 0px; */
-    /* left: 0; */
     width: 100vw;
-    /* background-color: white;  */
     z-index: 1000;
-    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
 /* LAPTOP NAV  */
 nav{
@@ -31,7 +24,6 @@ nav{
     top: -2.3em;
     position: relative;
     margin-right: 23px;
-    /* gap: 20px; */
     list-style-type: none;
 }
 #Laptop-Nav nav a{
@@ -88,13 +80,8 @@ color: black;
     min-height: 50%;
 }
 .Dropdown-container{
-/* z-index: 2; */
 position: relative;
 display:block;
-/* border-radius: 4px;
-background: rgba(0, 0, 0, 0.04);
-max-height: 20%;
-backdrop-filter: blur(75px); */
 
 }
 .Dropdown-content{
@@ -150,10 +137,7 @@ border-radius: 8px;
 
 /* MAIN AREA  */
 /* HERE SECTION  */
-section {
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
+
 /* CATEGORIES SECTION  */
 .categories-laptop{
     margin-top: -70px;
@@ -204,24 +188,12 @@ font-weight: 500;
 }
 
 /* LAPTOP SCREEN START HERE  */
-
-/* .sales1 , .sales2{
-    margin-bottom: -20px;
-}
-.sales3 {
-    margin-top: 20px;
-}
-.sales2 , .sales4{
-    margin-left: 28px;
-    margin-top: 20px;
-} */
-
 /* LAPTOP SCREEN  */
-section{
+/* section{
     display: flex;
     margin: 15px 15px;
     margin-top: 0px;
-}
+} */
 .Todays-text{
 display: flex;
 align-items: center;
@@ -252,25 +224,41 @@ height: 240px;
 }
 .sales1 .Item img{
     position: absolute;
-    /* max-width: 80px; */
     top: 18px;
     left: 16.5px;
 }
 .sales2 .Item img{
     position: absolute;
-    /* max-width: 100px; */
     top: 28px;
     left: 16.5px;
 }
 .sales3 .Item img{
     position: absolute;
-    /* max-width: 80px; */
     top: 30px;
     left: 23px;
 }
 .sales4 .Item img{
     position: absolute;
-    /* max-width: 60px; */
+    top: 15px;
+    left: 25px;
+}
+.sales5 .Item img{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.sales6 .Item img{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.sales7 .Item img{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.sales8 .Item img{
+    position: absolute;
     top: 15px;
     left: 25px;
 }
@@ -289,7 +277,6 @@ line-height: 24px; /* 150% */
 
 .Item-price {
 color: var(--Secondary-2, #DB4444);
-/* Title/16PX Medium */
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
@@ -344,7 +331,6 @@ background: #000;
 }
 .categories-section h3{
     color: var(--Text2, #000);
-    /* Heading/36PX SemiBold */
     font-family: Inter;
     font-size: 13px;
     font-style: normal;
@@ -381,10 +367,6 @@ height: 80px;
 
 /* ADS SECTION  */
 .Advertisement img{
-    /* position: relative; */
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
-    /* left: 14px; */
 }
 
 .Featured h3{
@@ -392,10 +374,6 @@ height: 80px;
     position: relative;
     right: 13.5px;
 }
-/* .Featured-images{
-    margin-top: 15px;
-} */
-/* SERVICES SECTION  */
 .Services{
     display: flex;
 }
@@ -404,7 +382,6 @@ height: 80px;
 }
 .Services-text h5{
 color: #000;
-/* Title/20PX Semibold */
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
@@ -488,14 +465,12 @@ line-height: 28px; /* 140% */
             font-size: 60px;
             font-style: normal;
             font-weight: 600;
-            line-height: 60px; /* 125%
-            letter-spacing: 1.90px; */
+            line-height: 60px; 
             }
 
             .Hero-text2 h5{
                 color: var(--Text, #FAFAFA);
                 text-align: center;
-                /* Title/16PX Medium */
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 500;
@@ -509,7 +484,34 @@ line-height: 28px; /* 140% */
                 color: white;
                 gap: 5px;
             }
-        
+            section{
+                /* justify-content: center; */
+                position: relative;
+                display: flex;
+            }
+
+            .sales2{
+                position: relative;
+                top: 1.5em;
+            }
+            section >.sales3 , section >.sales4{
+                position: relative;
+                justify-content: center;
+                left: 40em;
+                top: -19.6em;
+            }
+            .SALES3 , .SALES4{
+                position: relative;
+                justify-content: center;
+                left: 40em;
+                top: -19.6em;
+            }
+            .sales7 , .sales8{
+                position: relative;
+                justify-content: center;
+                left: 40em;
+                top: -19.6em;
+            }
             
             /* SERVICES AND FOOTER AREA  */
             .Services {
@@ -533,7 +535,6 @@ line-height: 28px; /* 140% */
             }
 
             footer{
-                /* height: 220px; */
                 padding-top: 20px;
                 justify-content: center;
                 display: flex;
@@ -552,7 +553,6 @@ line-height: 28px; /* 140% */
                 color: rgb(135, 135, 135);
                 background-color: #000;
                 text-align: center;
-                /* margin-bottom: 20px; */
             }
             .Part1 , .Part2{
                 margin-bottom: 6px;
@@ -595,7 +595,6 @@ line-height: 28px; /* 140% */
     main{
         justify-content: center;
         margin-top: 40px; 
-         /* /* Adjust margin to leave space for the fixed header  */
     }
     #Laptop-Nav{
         display: none;
@@ -657,10 +656,7 @@ line-height: 28px; /* 140% */
         position: relative;
         display:block;
         border-radius: 4px;
-        /* background: rgba(0, 0, 0, 0.04); */
-        max-height: 20%;
-        /* backdrop-filter: blur(75px); */
-        
+        max-height: 20%;        
         }
         .Dropdown-content{
         position: absolute;
