@@ -639,13 +639,14 @@ height: 150px;
                 display: flex;
                 background-color: #000;
                 color: white;
+                height: 200px;
             }
             .Footer1 , .Footer2{
                 display: flex;
             }
             .Copyright{
                 position: absolute;
-                margin-top: 10em;
+                margin-top: 9em;
                 align-items: center;
                 justify-content: center;
                 display: flex;
