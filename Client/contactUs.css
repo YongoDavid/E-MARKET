@@ -284,7 +284,13 @@ line-height: 28px; /* 140% */
         }
 
         .Contact1{
-            margin-bottom: 1em;
+            padding-bottom: 2em;
+        }
+        span{
+            font-size: 18px;
+            gap: 10px;
+            align-items: center;
+            display: flex;padding: 5px;
         }
 
         #theLine{
