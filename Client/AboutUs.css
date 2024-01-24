@@ -6,46 +6,55 @@
 
 body{
     overflow-x: hidden;
-    background-color: aqua;
     padding-top: 110px; 
 }
 header{
     align-content: center;
-    position: fixed;
-    margin-top: -10px;
-    top: 0px;
-    left: 0;
     width: 100vw;
-    background-color: white; 
     z-index: 1000;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
+/* LAPTOP NAV  */
+nav{
+    display: flex;
+    position: relative;
+    left: 33em;
+    bottom: 70px;
+}
+#Laptop-Nav nav li{
+    top: -2.3em;
+    position: relative;
+    margin-right: 23px;
+    list-style-type: none;
+}
+#Laptop-Nav nav a{
+    color: #000;
+    margin-right: 24px;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
 main{
-    justify-content: center;
-    margin-top: 40px; 
+    /* position: relative;
+    margin-top: -21em; */
 }
 #LOGO{
     align-items: center;
 }
 
+/* MOBILE  */
 #LOGO h3 a{
     color: #000;
     text-decoration: none;
     position: absolute;
-    left: 28%;
+    left: 30%;
     top: 2em;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 .cart-icon a{
-/* position: relative;
-top: 1.5em;
-left: 12em;
-text-decoration: none;
-list-style-type: none;
-color: black; */
-
 position: absolute;
 left: 89%;
 top: 1.5em;
@@ -67,9 +76,6 @@ color: black;
     background-color: rgb(255, 255, 255);
 }
 #dropdown_svg{
-    /* align-items: flex-start;
-    min-width: 50%;
-    min-height: 50%; */
     top: 0.5em;
     position: relative;
     align-items: flex-start;
@@ -104,20 +110,20 @@ font-size: 14px;
 padding: 5px 10px;
 list-style-type: none;
 }
-.Dropdown-container:hover .Dropdown-content{
+/* .Dropdown-container:hover .Dropdown-content{
   display: flex;
 }
 
 .Dropdown-container.clicked .Dropdown-content {
-    transform: translateX(0); /* Move to the center of the viewport when clicked */
-}
+    transform: translateX(0); 
+} */
 
 #Search_bar{
 position: relative;
 bottom: 10px;
 background: rgba(0, 0, 0, 0.04);
 top: 2px;
-left: 3px;
+/* left: 3px; */
 height: 1.8em;
 border-radius: 8px;
 }
@@ -132,16 +138,54 @@ border-radius: 8px;
     margin: 4px 4px ;
 }
 
-.Aboutimg{
-    /* position: relative; */
+
+/* MAIN AREA  */
+/* HERE SECTION  */
+
+/* CATEGORIES SECTION  */
+.categories-laptop{
+    margin-top: -70px;
+    margin-left: 11em;
+    
+}
+.categories-laptop li a{
+    position: relative;
+    top: -50px;
+    color: #000;
+   text-decoration: none;
+}
+.categories-laptop li {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+/* .Aboutimg{
+    position: relative;
 }
 .About-text{
-    /* justify-content: center;
-    text-align: center; */
+    justify-content: center;
+    text-align: center;
 }
 .About-text h4{
     color: #DB4444;
+} */
+
+
+.Services{
+    display: flex;
 }
+.Services img{
+    max-width: 35px;
+}
+.Services-text h5{
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+}
+
 
 /* LAPTOP SCREEN  */
 @media (min-width: 992px){
@@ -152,6 +196,12 @@ border-radius: 8px;
     }
     header{
         /* display: flex; */
+    }
+    main{
+        /* position: relative; */
+        /* justify-content: center;  */
+        /* margin-top: -21em;  */
+        /* margin-top: 40px;  */
     }
     .Dropdown-container{
         display: none;
@@ -171,19 +221,59 @@ border-radius: 8px;
         position: relative;
         top: 1em;
     }
-    .Line{
-        margin-bottom: 2em;
-        justify-content: center;
-        /* margin-top: 30px; */
-        width: 1100px;
+    .Line2{
+        position: relative;
+        top: -6em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
         height: 1px;
         opacity: 0.3;
         background: #000;
         }
+        .About-content{
+            display: flex;
+            justify-content: center;
+        }
+        .Aboutimg img{
+            position: relative;
+            left: ;
+            height: 400px;
+            width: 400px;
+        }
+        .About-text{
+            line-height: 30px;
+            margin-top: 8em;
+            margin-left: 2em;
+            text-align: left;
+            justify-content: center;
+            
+        }
+        .About-text h4{
+            font-size: 30px;
+            color: #DB4444;
+        }
 
-
-
-
+        /* SERVICES AND FOOTER AREA  */
+        .Services {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            justify-content: center ;
+        }
+        .service1 , .service2 , .service3{
+            margin-right: 2em;
+        }
+        .service1 img , .service2 img  , .service3 img{
+            position: relative;
+            left: 6em;
+        }
+        .Services-text{
+            text-align: center;
+            justify-content: center;
+        }
+        .Services-text p{
+            font-size: 12px;
+        }
 
 
         footer{
@@ -226,57 +316,131 @@ border-radius: 8px;
 
 
 @media (max-width: 576px){
-        *{
-            /* width: 100%vw; */
+    *{
+        /* width: 100%vw; */
+    }
+    body{
+        background-color: white;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+    #max-width{
+        max-width: 100%vw;
+    }
+    /* HEADER AREA  */
+    header{
+        align-content: center;
+        position: fixed;
+        margin-top: -10px;
+        top: 0px;
+        left: 0;
+        max-width: 100vw;
+        background-color: white; 
+        z-index: 1000;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }    
+
+
+    /* DROP DOWN AREA  */
+    .Dropdown-container{
+        z-index: 2;
+        position: relative;
+        display:block;
+        border-radius: 4px;
+        max-height: 20%;        
         }
-        body{
-            background-color: white;
-            overflow-x: hidden;
+        .Dropdown-content{
+        position: absolute;
+        border-radius: 4px;
+        background: #f8f7f7;
+        width: 80%;
+        padding: 10px;
+        z-index: 3;
+        display: none;
+        
+        /* Add transition property for smooth animation */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-110%); /* Initial position outside the viewport */
         }
-        #max-width{
-            max-width: 100%vw;
+        .Dropdown-content a {
+            text-decoration: none;
+            color: black;
         }
-        header{
-            align-content: center;
-            position: fixed;
-            margin-top: -10px;
-            top: 0px;
-            left: 0;
-            max-width: 100vw;
-            background-color: white; 
-            z-index: 1000;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        .Dropdown-content ul li {
+        font-size: 14px;
+        padding: 5px 10px;
+        list-style-type: none;
         }
-        main{
-            justify-content: center;
-            margin-top: 40px; 
+        .Dropdown-container:hover .Dropdown-content{
+          display: flex;
         }
-        #Laptop-Nav{
+        
+        .Dropdown-container.clicked .Dropdown-content {
+            transform: translateX(0); /* Move to the center of the viewport when clicked */
+        }
+        
+        .categories-laptop{
             display: none;
         }
 
-        .Aboutimg img{
-            display: none;
-        }
-        .About-text h4{
-            margin-bottom: 15px;
-        }
-        .About-text{
-            margin-top: -20px;
-            justify-content: center;
-            text-align: center;
-        }
-    
-        .Line{
-            text-align: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            max-width:200px;
-            height: 1px;
-            opacity: 0.3;
-            background: #000;
-            }
-    
+
+        /* Just for about section  */
+
+#Laptop-Nav{
+    display: none;
 }
+
+.Aboutimg img{
+    display: none;
+}
+.About-text h4{
+    margin-bottom: 15px;
+}
+.About-text{
+    margin-top: -20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Line{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width:200px;
+    height: 1px;
+    opacity: 0.3;
+    background: #000;
+    }
+
+    /* ABOUT FOR MOBILE  */
+
+    .Aboutimg{
+        position: relative;
+    }
+    .About-text{
+        justify-content: center;
+        text-align: center;
+    }
+    .About-text h4{
+        color: #DB4444;
+    }
+
+
+    .Services {
+        display: none;
+    }
+    
+
+    footer{
+        /* background-color: #000; */
+    }
+}
+
+
+
+
+
+
+

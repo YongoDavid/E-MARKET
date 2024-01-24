@@ -681,6 +681,7 @@ height: 150px;
     #max-width{
         max-width: 100%vw;
     }
+    /* HEADER AREA  */
     header{
         align-content: center;
         position: fixed;
@@ -977,51 +978,6 @@ height: 80px;
         .Services{
             display: none;
         }
-        footer{
-            background-color: #000;
-            color: white;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        footer h4 , p{
-            font-size: 8px;
-            /* display: none; */
-        }
-        .Part1, .Part2 {
-           margin-top: 10px;
-        }
-        .Part1 {
-            position: relative;
-            top: 1em;
-            right: 4.7em;
-        }
-        .Part1 h4 , .Part2 h4{
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        .Part2 {
-            position: relative;
-            left: 5em;
-            top: -5.6em;
-        }
-
-        .Copyright{
-            /* position: absolute; */
-            margin-top: -2em;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            color: hsl(0, 0%, 53%);
-            background-color: #000;
-            text-align: center;
-        }
-        .Copyright p {
-            justify-content: center;
-            text-align: center;
-            text-align: center;
-        }
-
 .Featured{
     margin-left: 13px;
     margin-top: 30px;
@@ -1053,4 +1009,52 @@ right: 5px;
 padding: 5px;
 
 }
+
+
+
+footer{
+    background-color: #000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer h4 , p{
+    font-size: 8px;
+    /* display: none; */
+}
+.Part1, .Part2 {
+   margin-top: 10px;
+}
+.Part1 {
+    position: relative;
+    top: 1em;
+    right: 4.7em;
+}
+.Part1 h4 , .Part2 h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.Part2 {
+    position: relative;
+    left: 5em;
+    top: -5.6em;
+}
+
+.Copyright{
+    /* position: absolute; */
+    margin-top: -2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: hsl(0, 0%, 53%);
+    background-color: #000;
+    text-align: center;
+}
+.Copyright p {
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+
 }
