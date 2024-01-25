@@ -38,3 +38,27 @@ app.use(
 // app.use('/accounts', accountsRoutes)
 // app.use('/blogs', blogRoutes)
 // app.use('/user', userRoutes)
+
+const server = http.createServer(app)  // to create out http server and pass our express server into it.
+
+const wss = new WebSocket.Server({server}); // creating WebSocket server 
+
+// creating  a web socket server connecion 
+wss.on('connection' ,(ws) => {
+    console.log('connection established')
+
+    // handle incoming WebSocket messages
+    ws.on('message', (message) => {
+        console.log(`Received message: ${message}`);
+        ws.send(`${message}`)
+    });
+
+    // handle WebSocket disconnection
+    ws.on('close', () => {
+        console.log(`WebSocket disconnected:`);
+    });
+});
+
+server.listen(PORT ,() => {
+    console.log(`listening on PORT ${PORT}`)
+})
