@@ -14,6 +14,8 @@ header{
     z-index: 1000;
 }
 /* LAPTOP NAV  */
+/* NEW STYLING  */
+
 nav{
     display: flex;
     position: relative;
@@ -37,6 +39,26 @@ main{
     position: relative;
     margin-top: -21em; 
 }
+/* NAV STYLING  NEW   */
+
+#Laptop-Nav li{
+    position: relative;
+}
+
+#Laptop-Nav li a:hover , #Laptop-Nav li a.active {
+    color: #a66c6c; 
+    transition: 0.3s ease;
+}
+#Laptop-Nav li a.active::after , #Laptop-Nav li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #a66c6c;
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+}
+
 #LOGO{
     align-items: center;
 }

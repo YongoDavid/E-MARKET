@@ -160,71 +160,6 @@ border-radius: 8px;
 }
 
 
-/* FORM AREA  */
-
-form{
-    margin-top: -100px;
-    display: grid;
-    place-items: center;
-}
-
-.form-Card{
-position: relative;
-top: 5em;
-padding: 10px;
-
-}
-.form-Card label{
-font-size: 10px;
-font-weight: 400;
-}
-.form-Card input{
-position: relative;
-height: 30px;
-width: 200px;
-border: none;
-border-bottom: 1px solid grey;
-font-size: 10px;
-font-weight: 400;
-}
-#Formbtn button{
-    position: relative;
-    color: white;
-    top: 20px;
-    width: 200px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 4px;
-    background: var(--Button2, #DB4444);
-}
-#errorMessage{
-    color: red;
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.Services{
-    display: flex;
-}
-.Services img{
-    max-width: 35px;
-}
-.Services-text h5{
-color: #000;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 28px; /* 140% */
-}
-
-
-
-
 /* LAPTOP SCREEN  */
 @media (min-width: 992px){
     *{
@@ -391,25 +326,23 @@ font-weight: 400;
         .Copyright{
             position: absolute;
             margin-top: 9em;
-            align-items: center;
-            justify-content: center;
             display: flex;
-            color: rgb(135, 135, 135);
-            background-color: #000;
-            text-align: center;
+            /* color: rgb(135, 135, 135); */
+            /* background-color: #000; */
+            /* text-align: center; */
         }
         .Part1 , .Part2{
             margin-bottom: 6px;
             margin-left: 5em;
         }
-        .Part1 h4, .Part2 h4{
+        /* .Part1 h4, .Part2 h4{
             margin-bottom: 5px;
             font-size: 20px;
-        }
-        .Part1 p, .Part2 p{
+        } */
+        /* .Part1 p, .Part2 p{
             margin-bottom: 5px;
             font-size: 14px;
-        }
+        } */
 }
 
 
@@ -422,10 +355,7 @@ font-weight: 400;
     body{
         background-color: white;
         overflow-x: hidden;
-        height: 100vh;
-    }
-    #max-width{
-        max-width: 100%vw;
+        /* height: 100vh; */
     }
     /* HEADER AREA  */
     header{
@@ -482,7 +412,6 @@ font-weight: 400;
         .categories-laptop{
             display: none;
         }
-
         /* Just for about section  */
 
 #Laptop-Nav{
@@ -504,14 +433,12 @@ font-weight: 400;
     /* FORM AREA  */
 
 form{
-    margin-top: -100px;
-    display: grid;
-    place-items: center;
+    text-align: center;
 }
 
 .form-Card{
 position: relative;
-top: 5em;
+top: -2em;
 padding: 10px;
 
 }
@@ -556,6 +483,8 @@ font-weight: 400;
 }
 
 footer{
+    height: 200px;
+    display: flex;
     background-color: #000;
     color: white;
     justify-content: center;
@@ -564,34 +493,31 @@ footer{
 }
 footer h4 , p{
     font-size: 8px;
-    /* display: none; */
 }
 .Part1, .Part2 {
-   margin-top: 10px;
+   justify-content: center;
 }
 .Part1 {
     position: relative;
-    top: 1em;
-    right: 4.7em;
+    top: -2em;
 }
 .Part1 h4 , .Part2 h4{
     font-size: 14px;
     margin-bottom: 5px;
 }
-.Part2 {
-    position: relative;
-    left: 5em;
-    top: -5.6em;
+
+.Footer1 , .Footer2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .Copyright{
-    /* position: absolute; */
-    margin-top: -2em;
+    position: absolute;
+    margin-top: 9em;
     align-items: center;
-    justify-content: center;
     display: flex;
     color: hsl(0, 0%, 53%);
-    background-color: #000;
     text-align: center;
 }
 .Copyright p {
