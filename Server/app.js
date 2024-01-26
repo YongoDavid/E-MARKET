@@ -27,9 +27,9 @@ app.use(bodyParser.json())  // use to identify the body of the request
 
 app.use(
     cors({
-        // replace this when website is hosted
-        // origin: ["http://127.0.0.1:5500", "https://hiit-blog.onrender.com"],
-        // credentials: true,
+        // replace this when website is hosted "https://hiit-blog.onrender.com"
+        origin: ["http://127.0.0.1:3000"],
+        credentials: true,
     })
 )
 

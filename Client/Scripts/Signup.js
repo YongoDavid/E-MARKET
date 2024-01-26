@@ -1,4 +1,4 @@
-// const uri = 'https://hiit-blog-api.onrender.com'     // the server url
+const uri = 'http://localhost:3000'     // the server url
 
 const signupDetials = document.querySelectorAll('inputs')
 
@@ -27,24 +27,24 @@ signupbtn.addEventListener('click' , (e) => {
 
 // REPLACE THIS WITH PROPER VALUES 
 
-// async function createAccount(data) {
-//     try {
-//         const response = await fetch(`${uri}/accounts/auth/signup`, {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json",
-//             },
-//             body: JSON.stringify(data),
-//         });
+async function createAccount(data) {
+    try {
+        const response = await fetch(`${uri}/accounts/auth/signup`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
 
-//         const result = await response.json();
-//         if (result.error) msg.innerText = result.error
+        const result = await response.json();
+        if (result.error) msg.innerText = result.error
 
-//         if (response.status === 200) window.location.href = 'login.html'
+        if (response.status === 200) window.location.href = 'login.html'
 
-//         console.log(result);
-//     } catch (error) {
-//         msg.innerText = error.error
-//         console.error(error);
-//     }
-// }
+        console.log(result);
+    } catch (error) {
+        msg.innerText = error.error
+        console.error(error);
+    }
+}
