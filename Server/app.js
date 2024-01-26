@@ -1,5 +1,5 @@
-// dependencies installed // cors bcrypt express dotenv validator morgan  jsonwebtoken uuid ws
-// mysql2 is yet to be installed because i havent done the databse 
+// dependencies installed // cors bcrypt express dotenv mysql2 validator morgan  jsonwebtoken uuid ws
+
 
 const express = require('express') // import express package 
 const http = require('http') // too create the server 
@@ -8,13 +8,12 @@ require('dotenv').config() // import the dot env file
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const WebSocket = require('ws')
-// HERE IMPORT DIFFERENT ROUTES FOR ACCOUNT / USERS / CART 
 
+// HERE IMPORT DIFFERENT ROUTES FOR ACCOUNT / USERS  
 const accountRoutes = require('./Routes/accountRoutes')
 const userRoutes = require('./Routes/userRoutes')
-const cartRoutes = require('./Routes/cartRoutes')
 
-// The code imports route handlers for accounts, blogs, and users.
+// The code imports route handlers for accounts and users.
 
 // CREATING SERVER 
 
@@ -35,12 +34,10 @@ app.use(
 )
 
 // using route handlers 
-// app.use('/accounts', accountRoutes )
-// app.use('/user', userRoutes)
-// app.use('/cart', cartRoutes)
+app.use('/accounts', accountRoutes )
+app.use('/user', userRoutes)
 
 // Route handlers are applied to specific paths in the Express app.
-
 
 const server = http.createServer(app)  // to create out http server and pass our express server into it.
 const wss = new WebSocket.Server({server}); // creating WebSocket server 

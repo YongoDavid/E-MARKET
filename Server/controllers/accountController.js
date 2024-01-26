@@ -9,7 +9,7 @@ const createToken = (id) => {
 
 // handles user signup function 
 
-exports.signUp = async (req ,res) {
+exports.signUp = async (req ,res) => {
     const {Name , Email , password , ConfirmPassword } = req.body
 
     try{
