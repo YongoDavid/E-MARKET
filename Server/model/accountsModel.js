@@ -1,20 +1,19 @@
-// LINK ALL DATABSE AND ROUTES TO DATABASE 
-// REPLACE WITH THE RIGHT ROUTES
-// const db = require('../config/db')
-// const timestamp = require('../middlewares/timestamp')
-// const validator = require('validator')
-// const bcrypt = require('bcrypt')
-// const uuid = require('uuid')
+const db = require('../config/db')
+const timestamp = require('../middlewares/timestamp')
+const validator = require('validator')
+const bcrypt = require('bcrypt')
+const uuid = require('uuid')
 
 class Accounts {
 
+    // handle user signUp operations 
     static async signUp (Name , email , password , confirmPassword) {
 
         const id =  uuid.v4()
         const created_at = await timestamp()
 
         // validate email and password 
-        if (!Name , !email , !password , !confirmPassword ) throw Error('All feilds must be filled')
+        if (!Name || !email || !password || !confirmPassword) throw Error('All fields must be filled');
         if (!validator.isEmail(email)) throw Error ("Invalid Email Address")
 
 

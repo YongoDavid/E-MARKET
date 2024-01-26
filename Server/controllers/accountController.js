@@ -1,10 +1,13 @@
 // replace with account model here 
-// const Accounts = require('../model/accountsModel')
+const Accounts = require('../model/accountsModel')
 const jwt = require('jsonwebtoken')
 
+// creating token function 
 const createToken = (id) => {
     return jwt.sign({id} , process.env.TOKEN_SECRET , {expiresIn:"24h"})
 }
+
+// handles user signup function 
 
 exports.signUp = async (req ,res) {
     const {Name , Email , password , ConfirmPassword } = req.body
@@ -17,6 +20,8 @@ exports.signUp = async (req ,res) {
         res.status(400).json({error: error.message})
     }
 }
+
+// handles user login function 
 
 exports.login = async (req,res) => {
     const {email , password } = req.body
