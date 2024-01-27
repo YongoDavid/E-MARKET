@@ -13,9 +13,8 @@ exports.signUp = async (req ,res) => {
     const {Name , Email , Password , ConfirmPassword } = req.body
 
     try{
-
         const user = await Accounts.signUp(Name , Email , Password , ConfirmPassword )
-        res.status(200).json({message: "Account Created"})
+        res.status(200).json({ message: "Account Created"})
     } catch (error) {
         res.status(400).json({error: error.message})
     }
@@ -24,13 +23,14 @@ exports.signUp = async (req ,res) => {
 // handles user login function 
 
 exports.login = async (req,res) => {
-    const {email , password } = req.body
+    const {Email , Password } = req.body
 
     try {
-        const user = await Accounts.login(email , password)
+        const user = await Accounts.login(Email , Password)
         const token = createToken(user.id)
         res.status(200).json({user , token , message:'user logged in '})
     } catch (error){
         res.status(400).json({error:error.message})
     }
 }
+
