@@ -18,7 +18,7 @@ const userRoutes = require('./Routes/userRoutes')
 // CREATING SERVER 
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT
 
 
 // Middlewares 
@@ -28,7 +28,7 @@ app.use(bodyParser.json())  // use to identify the body of the request
 app.use(
     cors({
         // replace this when website is hosted "https://hiit-blog.onrender.com"
-        origin: ["http://127.0.0.1:3000"],
+        origin: ["http://127.0.0.1:5500"],
         credentials: true,
     })
 )
@@ -37,7 +37,7 @@ app.use(
 app.use('/accounts', accountRoutes )
 app.use('/user', userRoutes)
 
-// Route handlers are applied to specific paths in the Express app.
+// handlers are applied to specific paths in the Express app.
 
 const server = http.createServer(app)  // to create out http server and pass our express server into it.
 const wss = new WebSocket.Server({server}); // creating WebSocket server 

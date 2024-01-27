@@ -1,4 +1,4 @@
-const url =  'http://localhost:3000' // server url 
+const url =  'http://127.0.0.1:5500' // server url 
 
 const loginDetials = document.querySelectorAll('input')
 
@@ -39,7 +39,7 @@ async function loginUser(data) {
 
         if (response.status === 200) {
             window.localStorage.setItem('token', result.token)  // the authorixation token is saved to the local storage so that it can be sent to the server for authentication. See header.js line 8
-            window.localStorage.setItem('name', result.user.first_name)  // the authorixation token is saved to the local storage so that it can be sent to the server for authentication. See header.js line 8
+            window.localStorage.setItem('name', result.user.Name)  // the authorixation token is saved to the local storage so that it can be sent to the server for authentication. See header.js line 8
             window.location.href = 'index.html'
         }
 

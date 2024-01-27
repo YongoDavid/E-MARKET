@@ -29,7 +29,7 @@ class Accounts {
             const hash = await bcrypt.hash(password , salt )
 
 
-            let sql = `INSERT INTO accounts (id, first_name, last_name, email, password, created_at)
+            let sql = `INSERT INTO accounts (id, Name, email, password, created_at)
             VALUES ('${id}', '${Name}', '${email}', '${hash}', '${created_at}')
 `
 
