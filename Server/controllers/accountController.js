@@ -10,10 +10,10 @@ const createToken = (id) => {
 // handles user signup function 
 
 exports.signUp = async (req ,res) => {
-    const {Name , Email , Password , ConfirmPassword } = req.body
+    const {name , email , password , confirmPassword } = req.body
 
     try{
-        const user = await Accounts.signUp(Name , Email , Password , ConfirmPassword )
+        const user = await Accounts.signUp(name , email , password , confirmPassword )
         res.status(200).json({ message: "Account Created"})
     } catch (error) {
         res.status(400).json({error: error.message})
@@ -23,10 +23,10 @@ exports.signUp = async (req ,res) => {
 // handles user login function 
 
 exports.login = async (req,res) => {
-    const {Email , Password } = req.body
+    const {email , password } = req.body
 
     try {
-        const user = await Accounts.login(Email , Password)
+        const user = await Accounts.login(email , password)
         const token = createToken(user.id)
         res.status(200).json({user , token , message:'user logged in '})
     } catch (error){

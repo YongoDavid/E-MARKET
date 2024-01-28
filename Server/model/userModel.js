@@ -5,7 +5,7 @@ const uuid = require('uuid');
 class User {
     static async getProfile(id) {
         try {
-            let sql = `SELECT Name, Email FROM accounts WHERE id = ?`;
+            let sql = `SELECT name, email FROM accounts WHERE id = ?`;
 
             const [user] = await db.execute(sql, [id]);
 
@@ -18,7 +18,7 @@ class User {
 
     static async getName(id) {
         try {
-            let sql = `SELECT Name FROM accounts WHERE id = ?`;
+            let sql = `SELECT name FROM accounts WHERE id = ?`;
 
             const [user] = await db.execute(sql, [id]);
 
