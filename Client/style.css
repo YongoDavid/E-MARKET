@@ -235,6 +235,8 @@ border-radius: 4px;
 width: 250px;
 height: 240px;
 }
+
+/* PRODUCT IMAGES  */
 .sales1 .Item img{
     width: 90px;
     position: absolute;
@@ -580,21 +582,21 @@ height: 150px;
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -11.9em;
+                top: -12.9em;
             }
             .SALES3 , .SALES4{
                 cursor: pointer;
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -11.9em;
+                top: -12.9em;
             }
             .sales7 , .sales8{
                 cursor: pointer;
                 position: relative;
                 justify-content: center;
                 left: 40em;
-                top: -13.4em;
+                top: -14.5em;
             }
             
             .item-text h4{
@@ -636,6 +638,22 @@ height: 150px;
                 /* background: rgb(205, 130, 130); */
                 /* box-shadow: 0px 34.069px 36.199px 0px rgba(0, 0, 0, 0.76); */
                 transform: translate(0,-4px);
+            }
+            .Detials button{
+                margin-bottom: 5px;
+                cursor: pointer;
+                position: relative;
+                left: 7.5em;
+                /* margin-bottom: 5px; */
+                color: white;
+                background: #DB4444;
+                padding: 5px;
+                border-radius: 30px;
+                border: none;
+            }
+            .Detials button a {
+                text-decoration: none;
+                color: white;
             }
             /* .Detials img{
                 text-align: center;
@@ -889,6 +907,25 @@ height: 150px;
         .Detials{
             position: relative;
         }
+        .Detials button{
+            color: white;
+            background: white;
+            position: relative;
+            top: 0.3em;
+            left: 3em;
+            /* padding: 5px; */
+            /* border-radius: 30px; */
+            border: none;
+            margin-bottom: 1em;
+        }
+        .Detials button a {
+            text-decoration: none;
+            color: #000;
+        }
+        .Detials button a:hover{
+            color: black;
+        }
+
         .Discount{
         border-radius: 4px;
         background: var(--Secondary-2, #DB4444);
@@ -900,29 +937,33 @@ height: 150px;
         width: 130px;
         height: 120px;
         }
+        /* PRODUCT IMAGES  */
         .sales1 .Item img{
             position: absolute;
-            max-width: 80px;
-            top: 18px;
-            left: 16.5px;
+            width: 50px;
+            height: 50px;
+            /* top: 18px;
+            left: 16.5px; */
         }
         .sales2 .Item img{
             position: absolute;
-            max-width: 100px;
-            top: 28px;
-            left: 16.5px;
+            width: 50px;
+            height: 50px;
+            /* top: 28px;
+            left: 16.5px; */
         }
         .sales3 .Item img{
             position: absolute;
-            max-width: 80px;
-            top: 30px;
-            left: 23px;
+            width: 50px;
+            /* top: 30px;
+            left: 23px; */
         }
         .sales4 .Item img{
             position: absolute;
-            max-width: 60px;
-            top: 15px;
-            left: 25px;
+            width: 50px;
+            height: 50px;
+            /* top: 15px;
+            left: 25px; */
         }
         .item-text h4{
         position: relative;
