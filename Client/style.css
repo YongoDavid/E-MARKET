@@ -935,7 +935,7 @@ height: 150px;
         .Detials button a:hover{
             color: black;
         }
-
+        
         .Discount{
         border-radius: 4px;
         background: var(--Secondary-2, #DB4444);
