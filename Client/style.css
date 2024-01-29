@@ -409,6 +409,9 @@ font-weight: 600;
 line-height: 28px; /* 140% */
 }
 
+.material-icons{
+    font-size: 10px;
+}
 /* FOOTER SECTION  */
 
 
@@ -647,16 +650,24 @@ height: 150px;
                 transform: translate(0,-4px);
             }
             .Detials button{
-                margin-bottom: 5px;
                 cursor: pointer;
                 position: relative;
                 left: 7.5em;
-                /* margin-bottom: 5px; */
                 color: white;
                 background: #DB4444;
-                padding: 5px;
-                border-radius: 30px;
+                padding: 1px;
+                border-radius: 10%;
                 border: none;
+            }
+            .Detials button a:hover{
+                /* cursor: pointer;
+                position: relative;
+                left: 7.5em;
+                color: white; */
+                background: #000000;
+                /* padding: 1px;
+                border-radius: 10%;
+                border: none; */
             }
             .Detials button a {
                 cursor: pointer;
