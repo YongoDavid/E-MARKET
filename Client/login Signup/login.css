@@ -407,8 +407,8 @@ font-weight: 400;
     }    
 
     main{
-        position: relative;
-        margin-top: 5em;
+        /* position: relative; */
+        margin-top: 2em;
     }
 
     /* DROP DOWN AREA  */
@@ -459,34 +459,22 @@ font-weight: 400;
     display: none;
 }
 
-.AccountImage{
-    justify-content: center;
-    text-align: center;
-}
+
 .AccountImage img{
     justify-content: center;
-    max-width: 200px;
-    top: -30px;
 }
 main h2{
     text-align: center;
     justify-content: center;
     position: relative;
-    bottom: 35px;
     font-size: 16px;
 }
-form{
-    margin-top: -100px;
-    display: grid;
-    place-items: center;
-}
-
 
 .form-Card{
 position: relative;
-top: 5em;
 padding: 10px;
-
+display: grid;
+place-items: center;
 }
 .form-Card label{
 font-size: 10px;
@@ -530,6 +518,31 @@ font-weight: 400;
 .Login-fter span a {
     color: #DB4444;
     text-decoration: none;
+}
+
+footer{
+    background-color: #000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer h4 , p{
+    font-size: 8px;
+}
+.Part1, .Part2 {
+   margin-top: 10px;
+}
+.Part1 h4 , .Part2 h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.Copyright{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: hsl(0, 0%, 53%);
+    text-align: center;
 }
 
     

@@ -383,22 +383,8 @@ line-height: 28px; /* 140% */
         }
 
 
-        /* Just for about section  */
-
 #Laptop-Nav{
     display: none;
-}
-
-.Aboutimg img{
-    display: none;
-}
-.About-text h4{
-    margin-bottom: 15px;
-}
-.About-text{
-    margin-top: -20px;
-    justify-content: center;
-    text-align: center;
 }
 
 .Line{
@@ -415,26 +401,31 @@ line-height: 28px; /* 140% */
 
     /* ABOUT FOR MOBILE  */
 
-    .Aboutimg{
-        position: relative;
+    .Aboutimg img{
+        width: 200px;
+        height: 200px;
+    }
+    .Aboutimg {
+        justify-content: center;
+        text-align: center;
+    }
+    .About-text h4{
+        margin-bottom: 1em;
     }
     .About-text{
         justify-content: center;
         text-align: center;
     }
+
     .About-text h4{
         color: #DB4444;
     }
-
 
     .Services {
         display: none;
     }
     
-
     footer{
-        height: 200px;
-        display: flex;
         background-color: #000;
         color: white;
         justify-content: center;
@@ -445,37 +436,19 @@ line-height: 28px; /* 140% */
         font-size: 8px;
     }
     .Part1, .Part2 {
-       justify-content: center;
-    }
-    .Part1 {
-        position: relative;
-        top: -2em;
+       margin-top: 10px;
     }
     .Part1 h4 , .Part2 h4{
         font-size: 14px;
         margin-bottom: 5px;
     }
-    
-    .Footer1 , .Footer2{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .Copyright{
-        position: absolute;
-        margin-top: 9em;
         align-items: center;
+        justify-content: center;
         display: flex;
         color: hsl(0, 0%, 53%);
         text-align: center;
     }
-    .Copyright p {
-        justify-content: center;
-        text-align: center;
-        text-align: center;
-    }
-    
 }
 
 
