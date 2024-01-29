@@ -50,7 +50,7 @@ const allProducts = [
 
     {
         id:8,
-        Name: 'Small BookSelf',
+        Name: 'Small BookShelf',
         Price: '$360'
         
     },

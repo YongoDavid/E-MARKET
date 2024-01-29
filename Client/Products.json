@@ -1,0 +1,113 @@
+[
+    {
+        "id":1,
+        "name": "HAVIT HV-G92 Gamepad",
+        "price": "120",
+        "image": "./images/game.png"
+    },
+
+    {
+        "id":2,
+        "name": "AK-900 Wired Keyboard",
+        "price": "960",
+        "image": "./images/Keyboard.png"
+    },
+
+    {
+        "id":3,
+        "name": "IPS LCD Gaming Monitor",
+        "price": "370",
+        "image": "./images/Teli.png"
+    },
+
+    {
+        "id":4,
+        "name": "S-Series Comfort Chair",
+        "price": "375",
+        "image": "./images/chair.png"
+    },
+
+    {
+        "id":5,
+        "name": "The north coat",
+        "price": "260",
+        "image": "./images/month1.png"
+    },
+
+    {
+        "id":6,
+        "name": "Gucci duffle bag",
+        "price": "960",
+        "image": "./images/month2.png"
+    },
+
+    {
+        "id":7,
+        "name": "RGB liquid CPU Cooler",
+        "price": "160",
+        "image": "./images/month3.png"
+    },
+
+    {
+        "id":8,
+        "name": "Small BookShelf",
+        "price": "360",
+        "image": "./images/month4.png"
+    },
+
+    {
+        "id":9,
+        "name": "Breed Dry Dog Food",
+        "price": "100",
+        "image": "./images/product1.png"
+    },
+
+    {
+        "id":10,
+        "name": "CANON EOS DSLR",
+        "price": "360",
+        "image": "./images/product2.png"
+    },
+
+    {
+        "id":11,
+        "name": "ASUS Gaming Laptop",
+        "price": "700",
+        "image": "./images/prooduct3.png"
+    },
+
+    {
+        "id":12,
+        "name": "Curology Product Set",
+        "price": "500",
+        "image": "./images/curology-j7pKVQrTUsM-unsplash 1.png"
+    },
+
+    {
+        "id":13,
+        "name": "Kids Electric Car",
+        "price": "960",
+        "image": "./images/product5.png"
+    },
+
+    {
+        "id":14,
+        "name": "Jr. Zoom Soccer Cleats",
+        "price": "1160",
+        "image": "./images/product6.png"
+    },
+
+    {
+        "id":15,
+        "name": "GP11 USB Gamepad",
+        "price": "660",
+        "image": "./images/product7.png"
+    },
+
+    {
+        "id":16,
+        "name": "Quilted Satin Jacket",
+        "price": "660",
+        "image": "./images/product8.png"
+    }
+]

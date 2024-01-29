@@ -9,6 +9,7 @@ body{
     padding-top: 110px; 
 }
 header{
+    /* new style  */
     align-content: center;
     width: 100vw;
     z-index: 1000;
@@ -53,6 +54,26 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/* new style  */
+.cart-icon{
+    /* position: relative; */
+    text-align: center;
+    margin: auto;
+}
+#icon-cart {
+    color: #FFF;
+    position: absolute;
+    left: 81em;
+    top: 3em;
+    display: flex;
+    background-color: #DB4444;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 .cart-icon a{
 position: absolute;
@@ -173,6 +194,12 @@ border-radius: 8px;
     height: 15px;
     margin-bottom: -3px;
 }
+
+.items1:nth-child(even) {
+    background-color: #7a7878;
+    color: white;
+}
+
 
 
 @media (min-width: 992px){
