@@ -1,6 +1,6 @@
 // dependencies installed // cors bcrypt express dotenv mysql2 validator morgan  jsonwebtoken uuid ws
 
-
+const path = require('path')
 const express = require('express') // import express package 
 const http = require('http') // too create the server 
 const morgan = require('morgan')
@@ -18,17 +18,21 @@ const userRoutes = require('./Routes/userRoutes')
 // CREATING SERVER 
 
 const app = express()
-const PORT = process.env.PORT
+const PORT = 5500
 
+const db = require('./config/db')
 
+app.use(express.urlencoded({extended: false}))
+app.use(express.static(path.join(__dirname, '..' , 'client')));
+app.use('/images' , express.static(path.join(__dirname, '..', 'client', 'images')))
 // Middlewares 
 app.use(morgan('dev'))
 app.use(bodyParser.json())  // use to identify the body of the request  
 
 app.use(
     cors({
-        // replace this when website is hosted "https://hiit-blog.onrender.com"
-        origin: ["http://127.0.0.1:5500"],
+        // replace this when website is hosted 
+        origin: ["http://localhost:5500" , ""],
         credentials: true,
     })
 )

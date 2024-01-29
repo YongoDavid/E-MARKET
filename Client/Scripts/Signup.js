@@ -1,4 +1,4 @@
-const uri = 'http://127.0.0.1:5500'     // the server url
+const uri = 'http://localhost:5500'     // the server url
 
 const signupDetials = document.querySelectorAll('inputs')
 
@@ -9,16 +9,16 @@ signupbtn.addEventListener('click' , (e) => {
     e.preventDefault()
     message.innerText = "" ;
 
-    if(!signupDetials[0].value || !signupDetials[1].value || !signupDetials[2].value || !signupDetials[3].value) {
+    if(!signupDetials[0].value || !signupDetials[1].value || !signupDetials[2].value ||signupDetials[3].value  ) {
         message.innerText = "All feilds must be filled "
-    } else if (signupDetials[2].value !== signupDetials[3].value){
+    } else if (signupDetials[2].value !== signupDetials[3].value ){
         message.innerText= "Password and Confirm password do not match"
     } else {
         let user = {
-            Name: signupDetials[0].value,
-            Email: signupDetials[1].value,
-            Password: signupDetials[2].value,
-            ConfirmPassword: signupDetials[3].value,
+            name: signupDetials[0].value,
+            email: signupDetials[1].value,
+            password: signupDetials[2].value,
+            // ConfirmPassword: signupDetials[3].value,
         }
         createAccount(user)
     }

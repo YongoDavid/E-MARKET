@@ -7,13 +7,13 @@ const uuid = require('uuid')
 class Accounts {
 
     // handle user signUp operations 
-    static async signUp (name , email , password , confirmPassword) {
+    static async signUp (name , email , password) {
 
         const id =  uuid.v4()
         const created_at = await timestamp()
 
         // validate email and password 
-        if (!name || !email || !password || !confirmPassword) throw Error('All fields must be filled');
+        if (!name || !email || !password) throw Error('All fields must be filled');
         if (!validator.isEmail(email)) throw Error ("Invalid Email Address")
 
 
@@ -29,7 +29,7 @@ class Accounts {
             const hash = await bcrypt.hash(password , salt )
 
 
-            let sql = `INSERT INTO accounts (id, Name, email, password, created_at)
+            let sql = `INSERT INTO accounts (id, name, email, password, created_at)
             VALUES ('${id}', '${name}', '${email}', '${hash}', '${created_at}')
 `
 

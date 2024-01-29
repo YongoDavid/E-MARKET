@@ -10,10 +10,10 @@ const createToken = (id) => {
 // handles user signup function 
 
 exports.signUp = async (req ,res) => {
-    const {name , email , password , confirmPassword } = req.body
+    const {name , email , password } = req.body
 
     try{
-        const user = await Accounts.signUp(name , email , password , confirmPassword )
+        const user = await Accounts.signUp(name , email , password)
         res.status(200).json({ message: "Account Created"})
     } catch (error) {
         res.status(400).json({error: error.message})
