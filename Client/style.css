@@ -243,26 +243,26 @@ height: 240px;
 .sales1 .Item img{
     width: 90px;
     position: absolute;
-    /* top: 18px;
-    left: 16.5px; */
+    left: 5em;
+    top: 3em;
 }
 .sales2 .Item img{
     width: 90px;
     position: absolute;
-    /* top: 28px;
-    left: 16.5px; */
+    left: 5em;
+    top: 3em;
 }
 .sales3 .Item img{
     width: 90px;
     position: absolute;
-    /* top: 30px;
-    left: 23px; */
+    left: 5em;
+    top: 3em;
 }
 .sales4 .Item img{
     width: 90px;
     position: absolute;
-    /* top: 15px;
-    left: 25px; */
+    left: 5em;
+    top: 3em;
 }
 .sales5 .Item img{
     width: 90px;
@@ -602,7 +602,7 @@ height: 150px;
                 top: -14.5em;
             }
             .sales1 img , .sales2 img , .sales3 img , .sales4 img  , .sales5 img , .sales6 img , .sales7 img , .sales8 img {
-                filter: drop-shadow(0 50px 20px rgb(208, 208, 208));
+                /* filter: drop-shadow(0 50px 20px rgb(208, 208, 208)); */
             }
             
             .item-text h4{
