@@ -345,6 +345,10 @@ height: 1px;
 opacity: 0.3;
 background: #000;
 }
+
+.Detials button{
+    cursor: pointer;
+}
 /* STOP HERE FOR LAPTOP SCREEN   */
 
 
@@ -629,10 +633,8 @@ height: 150px;
                 position: relative;
                 left: 7.5em;
             }
-            .Detials{
+            div .Detials{
                 /* made changes here  */
-
-                cursor: pointer;
                 border-radius: 26px;
                 background: rgb(255, 255, 255);
                 box-shadow: 0px 34.069px 36.199px 0px rgba(0, 0, 0, 0.13);
@@ -645,12 +647,9 @@ height: 150px;
                 transform: translate(0,-4px);
             }
             .Detials:hover{
-                /* background: rgb(205, 130, 130); */
-                /* box-shadow: 0px 34.069px 36.199px 0px rgba(0, 0, 0, 0.76); */
                 transform: translate(0,-4px);
             }
             .Detials button{
-                cursor: pointer;
                 position: relative;
                 left: 7.5em;
                 color: white;
@@ -664,26 +663,15 @@ height: 150px;
                 position: relative;
                 left: 7.5em;
                 color: white; */
-                background: #000000;
+                /* background: #000000; */
                 /* padding: 1px;
                 border-radius: 10%;
                 border: none; */
             }
             .Detials button a {
-                cursor: pointer;
                 text-decoration: none;
                 color: white;
             }
-            .Detials > button:hover{
-                cursor: pointer;
-            }
-            /* .Detials img{
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                width: 90px;
-            } */
-
             /* SERVICES AND FOOTER AREA  */
             .Services {
                 margin-top: 1em;
