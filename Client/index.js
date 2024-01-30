@@ -36,10 +36,11 @@
 //     }
 // }
 
+
 let listProductHTML = document.querySelector('.Detials')
 listProductHTML.addEventListener('click' , (event) => {
     let positionClick = event.target;
-    if(positionClick.classList.contains('addCart')){
+    if(positionClick.classList.contains('material-icons') || positionClick.classList.contains('')){
         console.log('item clicked')
         alert('1')
     }

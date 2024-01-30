@@ -1,4 +1,4 @@
-const url =  'http://localhost:5500' // server url 
+const uri =  'http://localhost:5500' // server url 
 
 const loginDetials = document.querySelectorAll('input')
 
@@ -7,10 +7,11 @@ const message = document.getElementById('errorMessage')
 
 loginBtn.addEventListener('click' , (e) => {
     e.preventDefault()
-    message.innerText = ''
+    message.innerText = '';
 
     if (!loginDetials[0].value || !loginDetials[1].value){
-        message.innerText = 'All fields must be filled'
+        message.innerText = 'All fields must be filled';
+        // console.log(message)
     } else {
         let user = {
             email: loginDetials[0].value ,
@@ -20,6 +21,7 @@ loginBtn.addEventListener('click' , (e) => {
         loginUser(user)
     }
 }) 
+
 
 // REPLACE THIS WITH THE RIGHT DATA WHEN READY 
 
@@ -46,7 +48,7 @@ async function loginUser(data) {
         if (result.error) msg.innerText = result.error
 
     } catch (error) {
-        msg.innerText = error.error
+        message.innerText = error.error
         console.error(error);
     }
 }

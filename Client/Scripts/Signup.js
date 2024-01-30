@@ -1,16 +1,17 @@
 const uri = 'http://localhost:5500'     // the server url
 
-const signupDetials = document.querySelectorAll('inputs')
+const signupDetials = document.querySelectorAll('input')
 
 const signupbtn = document.querySelector('#Formbtn')
 const message = document.querySelector('#errorMessage')
 
 signupbtn.addEventListener('click' , (e) => {
     e.preventDefault()
-    message.innerText = "" ;
+    message.innerText = ' ' ;
 
     if(!signupDetials[0].value || !signupDetials[1].value || !signupDetials[2].value ||signupDetials[3].value  ) {
         message.innerText = "All feilds must be filled "
+        // console.log(message)
     } else if (signupDetials[2].value !== signupDetials[3].value ){
         message.innerText= "Password and Confirm password do not match"
     } else {
@@ -38,10 +39,10 @@ async function createAccount(data) {
         });
 
         const result = await response.json();
+        console.log(result)
         if (result.error) msg.innerText = result.error
 
         if (response.status === 200) window.location.href = 'login.html'
-
         console.log(result);
     } catch (error) {
         msg.innerText = error.error
