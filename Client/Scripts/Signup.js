@@ -1,4 +1,5 @@
-const uri = 'http://localhost:5500'     // the server url
+// const uri = 'http://localhost:5500'     // the server url
+const uri = 'https://the-markket-server.onrender.com'
 
 const signupDetials = document.querySelectorAll('input')
 
