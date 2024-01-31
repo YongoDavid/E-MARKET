@@ -1,7 +1,7 @@
 const db = require('../config/db')
 const timestamp = require('../middlewares/timestamp')
 const validator = require('validator')
-// const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt')
 const uuid = require('uuid')
 
 class Accounts {
