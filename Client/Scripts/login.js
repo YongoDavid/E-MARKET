@@ -37,7 +37,6 @@ async function loginUser(data) {
         });
 
         const result = await response.json();
-
         console.log(result);
 
         if (response.status === 200) {

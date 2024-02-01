@@ -8,7 +8,7 @@ const message = document.querySelector('#errorMessage')
 
 signupbtn.addEventListener('click' , (e) => {
     e.preventDefault()
-    message.innerText = ' ' ;
+    message.innerText = ''
 
     if(!signupDetials[0].value || !signupDetials[1].value || !signupDetials[2].value ||signupDetials[3].value  ) {
         message.innerText = "All feilds must be filled "
@@ -43,7 +43,7 @@ async function createAccount(data) {
         console.log(result)
         if (result.error) msg.innerText = result.error
 
-        if (response.status === 200) window.location.href = 'login.html'
+        if (response.status === 200) window.location.href = 'Login.html'
         console.log(result);
     } catch (error) {
         msg.innerText = error.error
