@@ -31,8 +31,8 @@ app.use(bodyParser.json())  // use to identify the body of the request
 
 app.use(
     cors({
-        // replace this when website is hosted 
-        origin: ["http://localhost:5500" , "https://the-market-uchx.onrender.com"],
+        // replace this when website is hosted  "https://the-market-uchx.onrender.com"
+        origin: ["http://localhost:5500" ],
         credentials: true,
     })
 )
