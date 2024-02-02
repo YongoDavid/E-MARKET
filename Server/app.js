@@ -1,5 +1,6 @@
 // dependencies installed // cors bcrypt express dotenv mysql2 validator morgan  jsonwebtoken uuid ws
 
+// STILL HAVENT RESOLVED THE ISSUE THAT MIGHT BE COMING FROM HERE 
 const path = require('path')
 const express = require('express') // import express package 
 const http = require('http') // too create the server 
