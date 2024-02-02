@@ -6,7 +6,7 @@ const loginDetials = document.querySelectorAll('input')
 const loginBtn = document.getElementById('Formbtn')
 const message = document.getElementById('errorMessage')
 
-loginBtn.addEventListener('click' , (e) => {
+loginBtn.addEventListener('submit' , (e) => {
     e.preventDefault()
     message.innerText = '';
 
@@ -45,7 +45,7 @@ async function loginUser(data) {
             window.location.href = 'index.html'
         }
 
-        if (result.error) msg.innerText = result.error
+        if (result.error) message.innerText = result.error
 
     } catch (error) {
         message.innerText = error.error

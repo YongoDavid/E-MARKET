@@ -6,7 +6,7 @@ const signupDetials = document.querySelectorAll('input')
 const signupbtn = document.getElementById('Formbtn')
 const message = document.getElementById('errorMessage')
 
-signupbtn.addEventListener('click' , (e) => {
+signupbtn.addEventListener('submit' , (e) => {
     e.preventDefault()
     message.innerText = '';
 
@@ -41,7 +41,7 @@ async function createAccount(data) {
 
         const result = await response.json();
         console.log(result)
-        if (result.error) msg.innerText = result.error
+        if (result.error) message.innerText = result.error
 
         if (response.status === 200) {
             window.location.href = 'Login.html'
