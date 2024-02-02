@@ -38,7 +38,11 @@ app.use(
 )
 
 // using route handlers 
-app.use('/accounts', accountRoutes )
+app.use('/accounts' , (req , res , next) => {
+    console.log('Request Body in Middleware:' , req.body)
+    next();
+} , accountRoutes);
+// app.use('/accounts', accountRoutes )
 app.use('/user', userRoutes)
 
 // handlers are applied to specific paths in the Express app.

@@ -33,8 +33,12 @@ class Accounts {
             VALUES ('${id}', '${name}', '${email}', '${hash}', '${created_at}')
 `
 
-            await db.execute(sql)
+            await db.execute(sql , [id , name , email , hash , created_at])
         }
+
+        console.log('This is your name :', name)
+        console.log('Here is your email :',email)
+        console.log('and your password :',password)
     } 
 
 
