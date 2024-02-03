@@ -15,6 +15,7 @@ exports.signUp = async (req ,res) => {
     try{
         const user = await Accounts.signUp(name , email , password)
         res.status(200).json({ message: "Account Created"})
+        console.log(user)q
     } catch (error) {
         res.status(400).json({error: error.message})
     }
