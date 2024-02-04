@@ -1,5 +1,5 @@
 // replace with proper url  
-const User = require('../model/userModel')
+const User = require('../model/userModel');
 
 exports.getProfile = async (req,res) => {
 
@@ -10,7 +10,7 @@ exports.getProfile = async (req,res) => {
     } catch (error ){
         res.status(400).json({error: error.message})
     }
-}
+};
 
 exports.getName = async (req,res) => {
     try {
@@ -20,4 +20,4 @@ exports.getName = async (req,res) => {
     } catch (error){
         res.status(400).json({ error: error.message})
     }
-}
+};
