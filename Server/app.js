@@ -35,7 +35,7 @@ app.use(
         // replace this when website is hosted  "https://the-market-uchx.onrender.com"
         origin: ["http://localhost:5500"],
         credentials: true,
-    });
+    })
 );
 
 // using route handlers 
