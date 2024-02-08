@@ -23,10 +23,12 @@ const PORT = 5500;
 
 const db = require('./config/db');
 
+// static files middleware 
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, '..' , 'client')));
 app.use('/images' , express.static(path.join(__dirname, '..', 'client', 'images')));
-// Middlewares 
+
+// Middlewares for logger 
 app.use(morgan('dev'));
 app.use(bodyParser.json());  // use to identify the body of the request  
 
